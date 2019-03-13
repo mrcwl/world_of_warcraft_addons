@@ -1,7 +1,3 @@
-VER 3 0100000000000009 "`" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,help,exists]活力巫毒图腾;活力巫毒图腾
-END
 VER 3 0100000000000001 "`" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,help][help,exists]愈合;[@mouseover,harm,exists][harm,exists]阳炎之怒;愈合
@@ -9,6 +5,10 @@ END
 VER 3 010000000000000A "`" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@mouseover,help,exists][help,exists] 自然之愈;[harm,exists,nodead][mod:alt] 安抚;自然之愈
+END
+VER 3 0100000000000009 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,exists]活力巫毒图腾;活力巫毒图腾
 END
 VER 3 0100000000000005 "·" "INV_MISC_QUESTIONMARK"
 #showtooltip 

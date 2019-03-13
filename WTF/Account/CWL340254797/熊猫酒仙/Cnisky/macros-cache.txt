@@ -1,7 +1,3 @@
-VER 3 0100000000000001 "`" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,exists,help][help,exists]愈合;[@mouseover,harm,exists][harm,exists]阳炎之怒;愈合
-END
 VER 3 010000000000000A "`" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@mouseover,help,exists][help,exists] 自然之愈;[harm,exists,nodead][mod:alt] 安抚;自然之愈
@@ -10,17 +6,19 @@ VER 3 0100000000000009 "`" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,help,exists]活力巫毒图腾;活力巫毒图腾
 END
+VER 3 0100000000000001 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,help][help,exists]愈合;[@mouseover,harm,exists][harm,exists]阳炎之怒;愈合
+END
+VER 3 010000000000000F "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1DH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000010 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Cni[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
 VER 3 0100000000000005 "·" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [outdoors] !旅行形态;[talent:3/2] 猎豹形态;[talent:3/3] 熊形态;旅行形态;
-END
-VER 3 0100000000000008 "·" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [mod:alt,@player]回春术;[@mouseover,help,nodead]回春术;[@mouseover,help,dead][mod:shift]复生;[@mouseover,harm,exists][harm,exists,nodead]月火术;回春术
-END
-VER 3 0100000000000004 "·" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover]复生;复生
 END
 VER 3 0100000000000003 "·" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -50,4 +48,12 @@ END
 VER 3 010000000000000E "·" "INV_MISC_QUESTIONMARK"
 #showtooltips
 /cast [@player] 激活
+END
+VER 3 0100000000000008 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt,@player]回春术;[@mouseover,help,nodead]回春术;[@mouseover,help,dead][mod:shift]复生;[@mouseover,harm,exists][harm,exists,nodead]月火术;回春术
+END
+VER 3 0100000000000004 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover]复生;复生
 END
