@@ -1,0 +1,3 @@
+NugComboBarGUI: enabled
+NugComboBar: enabled
+nPower: enabled

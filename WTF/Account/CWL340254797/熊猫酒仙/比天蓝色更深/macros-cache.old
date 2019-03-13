@@ -1,0 +1,69 @@
+VER 3 0100000000000014 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt]克索诺斯之焰;[modifier:shift] 牺牲契约;献祭
+END
+VER 3 0100000000000015 "`" "INV_MISC_QUESTIONMARK"
+/castsequence reset=target 古尔丹之手,暗影箭,古尔丹之手,恶魔增效,暗影箭,古尔丹之手,暗影箭,古尔丹之手,恶魔增效,暗影箭,末日降临
+END
+VER 3 010000000000000A "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 生命通道; [modifier:shift] 疲劳诅咒;腐蚀术
+END
+VER 3 0100000000000010 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 生命分流; [modifier:shift] 虚弱诅咒;古尔丹之手
+END
+VER 3 010000000000000B "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm] 末日降临;末日降临
+END
+VER 3 010000000000000C "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:shift] 奴役恶魔;鲜血恐惧
+END
+VER 3 010000000000000D "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:shift] 恶魔法阵：召唤;恶魔法阵：传送
+END
+VER 3 0100000000000018 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 克索诺斯之焰;[modifier:shift] 硫磺烈火;燃烧
+END
+VER 3 010000000000000F "·" "INV_MISC_QUESTIONMARK"
+/castsequence reset=target 古尔丹之手,恶魔增效,暗影箭,古尔丹之手,恶魔增效,暗影箭,古尔丹之手,恶魔增效,暗影箭,古尔丹之手,生命分流,恶魔增效,暗影箭
+END
+VER 3 0100000000000008 "·" "INV_MISC_QUESTIONMARK"
+/showtooltip
+/cast [target=player] 恶魔掌控
+END
+VER 3 0100000000000011 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 腐蚀之种; [modifier:shift] 召唤恐惧卫士(守卫);鬼影缠身
+/use 10
+END
+VER 3 0100000000000012 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nopet,modifier:alt] 召唤虚空领主;[nopet,modifier:shift] 召唤眼魔;[nopet] 召唤邪能小鬼; [pet:破坏魔,modifier:alt] 魔能鞭笞(特殊技能);[pet:破坏魔] 迷魅(特殊技能);[pet:邪能小鬼,modifier:alt] 灼疗主人(特殊技能);[pet:邪能小鬼] 烧灼驱魔(特殊技能);[pet:眼魔] 眼棱爆炸(特殊技能);[pet:虚空领主] 缴械(特殊技能)
+END
+VER 3 0100000000000016 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:shift] 放逐术;恶魔传送门
+END
+VER 3 010000000000000E "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:shift] 恐惧;恐惧嚎叫
+END
+VER 3 010000000000001A "·" "INV_MISC_QUESTIONMARK"
+/showtooltip 黑暗灵魂：易爆
+/施放 黑暗灵魂：易爆
+/use 科普兰的清醒
+END
+VER 3 0100000000000019 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/施放 黑暗灵魂：学识
+/use 科普兰的清醒
+END
+VER 3 0100000000000005 "坐骑" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:shift] 炉石天马;[modifier:alt] 恐惧战马;红色原始迅猛龙
+END

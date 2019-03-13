@@ -1,0 +1,68 @@
+VER 3 0100000000000006 "`" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@mouseover,help,nodead,exists][@focus,mod:shitf,exists] 保护祝福;保护祝福
+END
+VER 3 0100000000000007 "`" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@mouseover,help,nodead,exists][@player,mod:alt][@focus,mod:shitf,exists] 赋予信仰;赋予信仰
+END
+VER 3 0100000000000008 "`" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
+/focus
+END
+VER 3 010000000000000A "`" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@mouseover,help,nodead,exists][@player,mod:alt][@focus,mod:shitf,exists] 圣光道标;圣光道标
+END
+VER 3 0100000000000004 "`" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@mouseover,help,nodead,exists][@player,mod:alt][@focus,mod:shitf,exists] 圣光闪现;圣光闪现
+END
+VER 3 0100000000000005 "`" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@mouseover,help,nodead,exists][@player,mod:alt][@focus,mod:shitf,exists] 圣光术;圣光术
+END
+VER 3 0100000000000009 "TMW" "ACHIEVEMENT_GUILDPERK_GMAIL"
+/TMW
+END
+VER 3 0100000000000010 "vuhdo" "ACHIEVEMENT_GUILDPERK_GMAIL"
+/vuhdo
+END
+VER 3 010000000000000E "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1PH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 010000000000000F "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]明天灬[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000011 "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@mouseover,help,nodead,exists] 牺牲祝福;牺牲祝福
+END
+VER 3 0100000000000012 "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@mouseover,help,nodead,exists] 圣疗术;圣疗术
+END
+VER 3 010000000000000C "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@mouseover,help,nodead,exists][@player,mod:alt][@focus,mod:shitf] 清洁术;清洁术
+END
+VER 3 010000000000000D "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@player,mod:alt][@mouseover,help,nodead,exists][@focus,mod:shitf] 赋予信仰;赋予信仰
+END
+VER 3 0100000000000014 "·" "INV_MISC_QUESTIONMARK"
+#showtooltips 提尔的拯救
+/施放 律法之则
+/cast 神圣复仇者
+/cast 提尔的拯救(神器)
+END
+VER 3 0100000000000003 "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@player,mod:alt][@mouseover,help,nodead,exists][@focus,mod:shitf] 神圣震击;神圣震击
+END
+VER 3 010000000000000B "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [target=focus,exists] 审判;审判
+END
+VER 3 0100000000000013 "任务" "SPELL_HOLY_HOLYPROTECTION"
+/turnin window
+END

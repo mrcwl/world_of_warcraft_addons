@@ -1,0 +1,28 @@
+VER 3 0100000000000002 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 贯日击;[modifier:shift]移花接木;醉酿投
+END
+VER 3 0100000000000001 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 金刚震; [modifier:shift] 真气波;滚地翻
+END
+VER 3 0100000000000007 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 魂体双分：转移; [modifier:shift] 魂体双分;散魔功
+END
+VER 3 0100000000000006 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 活血酒; [modifier:shift] 真气波;召唤玄牛雕像
+END
+VER 3 0100000000000005 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 金刚震; [modifier:shift] 紫色灵翼幼龙;迅捷白色陆行鸟
+END
+VER 3 0100000000000003 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 神鹤引项踢; [modifier:shift] 真气爆裂;猛虎掌
+END
+VER 3 0100000000000004 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 怒雷破; [modifier:shift] 禅意珠;旭日东升踢
+END

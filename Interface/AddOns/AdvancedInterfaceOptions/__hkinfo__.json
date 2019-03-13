@@ -1,0 +1,14 @@
+{
+	"search": 0,
+	"searchList": [
+		{
+			"img": "https://media.forgecdn.net/avatars/thumbnails/63/46/62/62/636142228065658810.png",
+			"name": "AdvancedInterfaceOptions",
+			"fileName": "advancedinterfaceoptions",
+			"description": "Restores access to removed interface options in Legion"
+		}
+	],
+	"ipMap": [],
+	"version": "1.2.9",
+	"mapping": "AdvancedInterfaceOptions"
+}

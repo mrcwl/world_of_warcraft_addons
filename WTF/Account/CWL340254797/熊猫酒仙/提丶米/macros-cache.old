@@ -1,0 +1,45 @@
+VER 3 0100000000000007 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:7/1] 混乱之刃; [talent:7/2] 邪能弹幕;混乱新星;
+END
+VER 3 0100000000000003 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor]恶魔变形 
+END
+VER 3 0100000000000001 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [talent:2/2]邪能之刃;恶魔之咬 
+END
+VER 3 0100000000000002 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast 涅墨西斯 
+/cast 混乱之刃 
+END
+VER 3 0100000000000008 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] 地狱火撞击
+END
+VER 3 0100000000000009 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] 锁链咒符
+END
+VER 3 010000000000000A "`" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] 烈焰咒符
+END
+VER 3 0100000000000005 "off" "466279"
+/console ActionCam off 
+END
+VER 3 0100000000000004 "on" "466277"
+/console ActionCam basic 
+/console ActionCam focusOff 
+/console ActionCam noHeadMove 
+END
+VER 3 010000000000000B "·" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] 沉默咒符
+END
+VER 3 0100000000000006 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor]恶魔变形 
+END

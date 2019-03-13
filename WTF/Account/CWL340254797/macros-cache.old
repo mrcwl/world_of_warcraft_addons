@@ -1,0 +1,11 @@
+VER 3 000000000000005D "cvar" "2495963"
+/run SetCVar ("nameplateSelfTopInset", .3)
+/run SetCVar ("nameplateSelfBottomInset, .3)
+END
+VER 3 000000000000005F "去鹰边" "895886"
+/run MainMenuBarArtFrame.LeftEndCap:Hide();
+/run MainMenuBarArtFrame.RightEndCap:Hide();
+END
+VER 3 000000000000004E "视角" "SPELL_NATURE_SWIFTNESS"
+/script SetCVar("cameraDistanceMaxFactor",2.6)
+END

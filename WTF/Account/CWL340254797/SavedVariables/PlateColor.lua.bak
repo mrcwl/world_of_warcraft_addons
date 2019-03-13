@@ -1,0 +1,19 @@
+
+PlateColorDB = {
+	["pvp"] = true,
+	["hps"] = 1,
+	["ov"] = 0.8,
+	["oh"] = 0.6,
+	["scale"] = true,
+	["mb"] = true,
+	["hp"] = false,
+	["ch"] = true,
+	["sf"] = true,
+	["dq"] = 1,
+	["name"] = true,
+	["nScale"] = 0.7,
+	["iKillper"] = 0,
+	["arrow"] = true,
+	["jian"] = true,
+	["texture"] = true,
+}

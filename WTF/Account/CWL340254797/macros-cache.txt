@@ -1,0 +1,22 @@
+VER 3 000000000000005D "cvar" "2495963"
+/run SetCVar ("nameplateSelfTopInset", .3)
+/run SetCVar ("nameplateSelfBottomInset, .3)
+END
+VER 3 000000000000005F "去鹰边" "895886"
+/run MainMenuBarArtFrame.LeftEndCap:Hide();
+/run MainMenuBarArtFrame.RightEndCap:Hide();
+END
+VER 3 0000000000000060 "螳螂妖" "INV_MISC_QUESTIONMARK"
+/use 古代树脂采集器
+/use 花粉采集器
+/use 螳螂妖帝国旗帜
+/use 凯帕树脂容器
+/use 失效的声波信标
+/use 螳螂塑像
+/use 螳螂妖灯笼
+/use 英杰残骸
+/use 一箱托维尔考古碎片
+END
+VER 3 000000000000004E "视角" "SPELL_NATURE_SWIFTNESS"
+/script SetCVar("cameraDistanceMaxFactor",2.6)
+END
