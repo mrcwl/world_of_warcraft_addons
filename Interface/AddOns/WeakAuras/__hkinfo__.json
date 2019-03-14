@@ -1,0 +1,18 @@
+{
+	"search": 0,
+	"searchList": [
+		{
+			"img": "https://media.forgecdn.net/avatars/thumbnails/62/782/62/62/636142194921799650.png",
+			"name": "WeakAuras 2",
+			"fileName": "weakauras-2",
+			"description": "A powerful, comprehensive utilty for displaying graphics and information based on buffs, debuffs, and other triggers."
+		}
+	],
+	"ipMap": [
+		"WeakAurasOptions",
+		"WeakAurasModelPaths",
+		"WeakAurasTemplates"
+	],
+	"version": "2.11.6",
+	"mapping": "WeakAuras 2"
+}

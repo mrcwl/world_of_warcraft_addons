@@ -1,0 +1,4 @@
+VER 3 0100000000000003 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor] 流星
+END

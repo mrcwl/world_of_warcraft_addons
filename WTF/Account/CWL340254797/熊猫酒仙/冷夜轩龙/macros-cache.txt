@@ -1,0 +1,74 @@
+VER 3 0100000000000001 " " "INV_MISC_GEAR_01"
+/focus
+END
+VER 3 010000000000000F "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:shift] 暴风雪;冰霜新星
+END
+VER 3 0100000000000010 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 法力宝石;[modifier:shift] 法力护盾;寒冰护体
+END
+VER 3 0100000000000004 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:shift] 魔爆术;冰霜新星
+END
+VER 3 0100000000000014 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 霜火之箭;寒冰箭
+END
+VER 3 0100000000000005 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 法力宝石;法力护盾
+END
+VER 3 0100000000000012 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 逃命专家(种族特长);冷酷角斗士的顽强勋章
+END
+VER 3 0100000000000013 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/focus
+/cast 变形术(龟)
+END
+VER 3 0100000000000007 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 炎爆术;火球术
+END
+VER 3 0100000000000003 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 法师结界;[modifier:shift] 冰枪术;活动炸弹
+END
+VER 3 010000000000000D "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 火焰冲击;[modifier:shift] 寒冰炸弹;冰枪术
+END
+VER 3 010000000000000E "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 冷酷角斗士的顽强纹章;[modifier:shift] 镜像;冰锥术
+END
+VER 3 0100000000000002 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/stopcasting
+/cancelAura 寒冰屏障
+/cast 寒冰屏障
+END
+VER 3 0100000000000008 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 冰锥术;[modifier:shift] 烈焰宝珠;龙息术
+END
+VER 3 0100000000000011 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 法师结界;[modifier:shift] 时间扭曲;冰霜之环
+END
+VER 3 0100000000000006 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 镜像;[modifier:shift] 烈焰风暴;冲击波 
+END
+VER 3 010000000000000A "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:shift] 紫色灵翼幼龙;冬泉霜刃豹
+END
+VER 3 010000000000000B "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:alt] 解除诅咒;[modifier:shift] 法术吸取;缓落术
+END

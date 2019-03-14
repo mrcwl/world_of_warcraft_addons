@@ -1,0 +1,11 @@
+AngryKeystones: disabled
+Auctionator: disabled
+SimpleInterruptAnnounce: disabled
+SimpleInterruptAnnounce_Config: disabled
+Skada: disabled
+TellMeWhen: disabled
+TellMeWhen_Options: disabled
+Col: disabled
+MeetingStone: disabled
+FreeMountCd: disabled
+Myslot: disabled

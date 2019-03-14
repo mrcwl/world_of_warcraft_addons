@@ -1,0 +1,16 @@
+VER 3 010000000000001B "痛楚" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm] 痛楚;痛楚
+END
+VER 3 010000000000001D "痛苦无常" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm] 痛苦无常;痛苦无常
+END
+VER 3 010000000000001E "种子" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm] 腐蚀之种;腐蚀之种
+END
+VER 3 010000000000001C "腐蚀" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm] 腐蚀术;腐蚀术
+END

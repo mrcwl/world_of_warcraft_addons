@@ -7,8 +7,8 @@ WeakAurasSaved = {
 		["骷髅黑帆"] = {
 			[199603] = 1269439,
 		},
-		["强势连击"] = {
-			[193356] = 1393014,
+		["潜行"] = {
+			[1784] = 132320,
 		},
 		["可乘之机"] = {
 			[195627] = 1373908,
@@ -22,14 +22,14 @@ WeakAurasSaved = {
 		["埋藏的宝藏"] = {
 			[199600] = 1269443,
 		},
+		["强势连击"] = {
+			[193356] = 1393014,
+		},
 		["大乱斗"] = {
 			[193358] = 1269440,
 		},
 		["潜伏帷幕"] = {
 			[114018] = 635350,
-		},
-		["潜行"] = {
-			[1784] = 132320,
 		},
 	},
 	["editor_theme"] = "Monokai",
@@ -57,10 +57,10 @@ WeakAurasSaved = {
 						["buffShowOn"] = "showOnActive",
 						["type"] = "status",
 						["subeventSuffix"] = "_CAST_START",
-						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
-						["event"] = "Action Usable",
 						["use_unit"] = true,
+						["event"] = "Action Usable",
+						["use_absorbMode"] = true,
 						["realSpellName"] = "手枪射击",
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -84,13 +84,13 @@ WeakAurasSaved = {
 						["use_powertype"] = true,
 						["buffShowOn"] = "showOnActive",
 						["type"] = "status",
-						["unevent"] = "auto",
-						["power_operator"] = "<=",
-						["use_power"] = true,
-						["event"] = "Power",
-						["ownOnly"] = true,
 						["power"] = "3",
+						["power_operator"] = "<=",
 						["use_absorbMode"] = true,
+						["event"] = "Power",
+						["use_power"] = true,
+						["ownOnly"] = true,
+						["unevent"] = "auto",
 						["spellIds"] = {
 							1784, -- [1]
 						},
@@ -141,7 +141,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["xOffset"] = 100,
+			["text2Point"] = "CENTER",
 			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
@@ -150,10 +150,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "TOPRIGHT",
-			["text1Containment"] = "INSIDE",
+			["stickyDuration"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["text2Point"] = "CENTER",
+			["parent"] = "蛋神",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -172,17 +172,49 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["stickyDuration"] = false,
-			["text2Font"] = "Friz Quadrata TT",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["selfPoint"] = "CENTER",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				0.980392156862745, -- [2]
 				0.972549019607843, -- [3]
 				1, -- [4]
 			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "伤害数字",
+			["internalVersion"] = 11,
+			["config"] = {
+			},
+			["text1FontFlags"] = "THICKOUTLINE",
+			["regionType"] = "icon",
+			["xOffset"] = 100,
+			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["text2Enabled"] = false,
+			["text1"] = "%s",
+			["frameStrata"] = 1,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["zoom"] = 0,
+			["auto"] = true,
+			["text2"] = "%p",
+			["id"] = "DS手枪",
+			["useglowColor"] = false,
+			["alpha"] = 1,
+			["width"] = 35,
+			["cooldownTextEnabled"] = true,
+			["uid"] = "15o6plgKf5R",
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 				},
@@ -191,42 +223,10 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["config"] = {
-			},
-			["text1FontFlags"] = "THICKOUTLINE",
-			["regionType"] = "icon",
-			["internalVersion"] = 11,
-			["anchorFrameType"] = "SCREEN",
-			["text2FontSize"] = 24,
-			["text2Enabled"] = false,
-			["text1"] = "1",
-			["frameStrata"] = 1,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2"] = "%p",
-			["auto"] = true,
-			["zoom"] = 0,
-			["id"] = "DS手枪",
-			["cooldownTextEnabled"] = true,
-			["alpha"] = 1,
-			["width"] = 35,
-			["text1Font"] = "伤害数字",
-			["uid"] = "15o6plgKf5R",
-			["inverse"] = false,
-			["parent"] = "蛋神",
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["useglowColor"] = false,
+			["text1Containment"] = "INSIDE",
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["DS正中"] = {
 			["glow"] = true,
@@ -249,11 +249,11 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["names"] = {
 						},
-						["unevent"] = "auto",
 						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
-						["event"] = "Cooldown Progress (Spell)",
 						["use_absorbMode"] = true,
+						["event"] = "Cooldown Progress (Spell)",
+						["unevent"] = "auto",
 						["realSpellName"] = "正中眉心",
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -278,13 +278,13 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["subeventSuffix"] = "_CAST_START",
 						["power_operator"] = ">=",
-						["unit"] = "player",
+						["buffShowOn"] = "showOnActive",
 						["event"] = "Power",
-						["use_power"] = true,
+						["unit"] = "player",
 						["names"] = {
 							"潜行", -- [1]
 						},
-						["buffShowOn"] = "showOnActive",
+						["use_power"] = true,
 						["spellIds"] = {
 							1784, -- [1]
 						},
@@ -300,18 +300,18 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["duration"] = "1",
+						["unevent"] = "auto",
 						["use_absorbMode"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
-						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "正中眉心",
 						["use_spellName"] = true,
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showOnReady",
+						["use_unit"] = true,
 						["unit"] = "player",
-						["subeventPrefix"] = "SPELL",
 						["spellName"] = 199804,
 					},
 					["untrigger"] = {
@@ -336,7 +336,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["xOffset"] = 100,
+			["text2Point"] = "CENTER",
 			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
@@ -345,10 +345,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "TOPRIGHT",
-			["text1Containment"] = "INSIDE",
+			["stickyDuration"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["text2Point"] = "CENTER",
+			["parent"] = "蛋神",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -367,12 +367,49 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["stickyDuration"] = false,
-			["text2Font"] = "Friz Quadrata TT",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["selfPoint"] = "CENTER",
+			["text1Font"] = "伤害数字",
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
-			["text1Font"] = "伤害数字",
+			["text1Color"] = {
+				1, -- [1]
+				0.996078431372549, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["internalVersion"] = 11,
+			["config"] = {
+			},
+			["text1FontFlags"] = "THICKOUTLINE",
+			["regionType"] = "icon",
+			["xOffset"] = 100,
+			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["text2Enabled"] = false,
+			["text1"] = "%s",
+			["frameStrata"] = 1,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["zoom"] = 0,
+			["auto"] = true,
+			["text2"] = "%p",
+			["id"] = "DS正中",
+			["useglowColor"] = false,
+			["alpha"] = 1,
+			["width"] = 35,
+			["cooldownTextEnabled"] = true,
+			["uid"] = "GM3mFCCS4wS",
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 				},
@@ -381,47 +418,10 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["config"] = {
-			},
-			["text1FontFlags"] = "THICKOUTLINE",
-			["regionType"] = "icon",
-			["internalVersion"] = 11,
-			["anchorFrameType"] = "SCREEN",
-			["text2FontSize"] = 24,
-			["text2Enabled"] = false,
-			["text1"] = "Q",
-			["frameStrata"] = 1,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2"] = "%p",
-			["auto"] = true,
-			["zoom"] = 0,
-			["id"] = "DS正中",
-			["cooldownTextEnabled"] = true,
-			["alpha"] = 1,
-			["width"] = 35,
-			["text1Color"] = {
-				1, -- [1]
-				0.996078431372549, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["uid"] = "GM3mFCCS4wS",
-			["inverse"] = false,
-			["parent"] = "蛋神",
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["useglowColor"] = false,
+			["text1Containment"] = "INSIDE",
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["帷幕倒计时"] = {
 			["text2Point"] = "CENTER",
@@ -458,18 +458,6 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["internalVersion"] = 11,
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["parent"] = "蛋神",
-			["text2FontFlags"] = "OUTLINE",
-			["height"] = 40,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -484,6 +472,29 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["text1Containment"] = "INSIDE",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text1Point"] = "BOTTOMRIGHT",
+			["actions"] = {
+				["start"] = {
+					["message_type"] = "YELL",
+					["do_message"] = true,
+					["message"] = "%p",
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["do_custom"] = false,
+				},
+			},
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 40,
+			["parent"] = "蛋神",
 			["load"] = {
 				["use_class"] = true,
 				["spec"] = {
@@ -500,21 +511,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["actions"] = {
-				["start"] = {
-					["message_type"] = "YELL",
-					["do_message"] = true,
-					["message"] = "%p",
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["do_custom"] = false,
-				},
-			},
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["desaturate"] = false,
+			["useglowColor"] = false,
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
@@ -523,7 +522,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["useglowColor"] = false,
+			["text1Enabled"] = false,
 			["config"] = {
 			},
 			["text2Color"] = {
@@ -533,19 +532,19 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
-			["text1Enabled"] = false,
+			["internalVersion"] = 11,
 			["width"] = 40,
 			["text2FontSize"] = 24,
 			["frameStrata"] = 1,
 			["text1"] = "%s",
 			["glow"] = false,
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["text1Font"] = "Friz Quadrata TT",
 			["id"] = "帷幕倒计时",
-			["alpha"] = 0,
 			["text2Enabled"] = false,
+			["alpha"] = 0.5,
 			["anchorFrameType"] = "SCREEN",
 			["text1FontFlags"] = "OUTLINE",
 			["uid"] = "1U7ko2zocIU",
@@ -563,7 +562,7 @@ WeakAurasSaved = {
 						{
 							["value"] = {
 								["message_type"] = "YELL",
-								["message"] = "已释放帷幕， 持续15秒",
+								["message"] = "范围30码  持续15秒",
 							},
 							["property"] = "chat",
 						}, -- [1]
@@ -706,13 +705,14 @@ WeakAurasSaved = {
 					},
 				}, -- [9]
 			},
+			["authorOptions"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["xOffset"] = 0,
 		},
 		["蛋神"] = {
 			["backdropColor"] = {
@@ -765,7 +765,7 @@ WeakAurasSaved = {
 			["borderEdge"] = "None",
 			["regionType"] = "group",
 			["borderSize"] = 16,
-			["scale"] = 1.1,
+			["scale"] = 1.05,
 			["borderColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -786,7 +786,7 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["expanded"] = false,
+			["expanded"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -812,13 +812,13 @@ WeakAurasSaved = {
 			["anchorPoint"] = "CENTER",
 			["selfPoint"] = "BOTTOMLEFT",
 			["id"] = "蛋神",
-			["xOffset"] = 4.77267170540528,
+			["xOffset"] = -2.23400307374137,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["borderInset"] = 11,
 			["config"] = {
 			},
 			["uid"] = "Ws9gh1FpKD(",
-			["borderInset"] = 11,
 			["actions"] = {
 				["start"] = {
 				},
@@ -829,6 +829,106 @@ WeakAurasSaved = {
 			},
 			["conditions"] = {
 			},
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["affixes"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "ROGUE",
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = "true",
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["talent3"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["yOffset"] = -169.771968443838,
+		},
+		["Details! Boss Mods Group"] = {
+			["grow"] = "DOWN",
+			["controlledChildren"] = {
+			},
+			["xOffset"] = 0,
+			["yOffset"] = 370,
+			["anchorPoint"] = "CENTER",
+			["space"] = 2,
+			["background"] = "None",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["unit"] = "player",
+						["spellIds"] = {
+						},
+						["buffShowOn"] = "showOnActive",
+						["names"] = {
+						},
+						["subeventPrefix"] = "SPELL",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = 1,
+			},
+			["radius"] = 200,
+			["selfPoint"] = "TOP",
+			["align"] = "CENTER",
+			["rotation"] = 0,
+			["height"] = 121.503601074219,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -842,8 +942,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
-					["single"] = "ROGUE",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -851,7 +950,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = "true",
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -868,15 +970,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -885,7 +984,41 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["yOffset"] = -327.273026906749,
+			["animate"] = true,
+			["scale"] = 1,
+			["border"] = "None",
+			["regionType"] = "dynamicgroup",
+			["sort"] = "none",
+			["expanded"] = true,
+			["constantFactor"] = "RADIUS",
+			["borderOffset"] = 16,
+			["id"] = "Details! Boss Mods Group",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 359.096801757813,
+			["authorOptions"] = {
+			},
+			["config"] = {
+			},
+			["internalVersion"] = 11,
+			["backgroundInset"] = 0,
+			["conditions"] = {
+			},
+			["stagger"] = 0,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
 		},
 		["影舞步CD"] = {
 			["text2Point"] = "CENTER",
@@ -905,51 +1038,14 @@ WeakAurasSaved = {
 				},
 			},
 			["useglowColor"] = false,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["itemName"] = 0,
-						["duration"] = "1",
-						["genericShowOn"] = "showAlways",
-						["use_unit"] = true,
-						["remaining"] = "95",
-						["use_genericShowOn"] = true,
-						["debuffType"] = "HELPFUL",
-						["unit"] = "player",
-						["type"] = "status",
-						["use_remaining"] = false,
-						["subeventSuffix"] = "_CAST_START",
-						["use_showOn"] = true,
-						["names"] = {
-						},
-						["event"] = "Cooldown Progress (Spell)",
-						["remaining_operator"] = "<=",
-						["realSpellName"] = "影舞步",
-						["use_spellName"] = true,
-						["spellIds"] = {
-						},
-						["use_itemName"] = true,
-						["unevent"] = "auto",
-						["use_absorbMode"] = true,
-						["subeventPrefix"] = "SPELL",
-						["spellName"] = 51690,
-					},
-					["untrigger"] = {
-						["showOn"] = "showAlways",
-						["spellName"] = 12472,
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
+			["text2Enabled"] = false,
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
 			["parent"] = "蛋神",
-			["authorOptions"] = {
-			},
-			["desaturate"] = false,
+			["text1Enabled"] = true,
+			["text1Containment"] = "INSIDE",
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -960,7 +1056,7 @@ WeakAurasSaved = {
 			["version"] = 21,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["text1Enabled"] = true,
+			["desaturate"] = false,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -985,21 +1081,21 @@ WeakAurasSaved = {
 						true, -- [3]
 					},
 				},
+				["use_class"] = true,
+				["use_talent"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_talent"] = true,
-				["use_class"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
@@ -1008,7 +1104,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -1018,7 +1114,7 @@ WeakAurasSaved = {
 				},
 			},
 			["url"] = "https://wago.io/4J5oydLtZ/21",
-			["cooldownTextEnabled"] = true,
+			["internalVersion"] = 11,
 			["config"] = {
 			},
 			["text2Containment"] = "INSIDE",
@@ -1031,16 +1127,60 @@ WeakAurasSaved = {
 			},
 			["text1Font"] = "Friz Quadrata TT",
 			["anchorFrameType"] = "SCREEN",
-			["text2Color"] = {
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["glow"] = false,
+			["text2FontSize"] = 24,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["itemName"] = 0,
+						["duration"] = "1",
+						["genericShowOn"] = "showAlways",
+						["use_unit"] = true,
+						["remaining"] = "95",
+						["unit"] = "player",
+						["spellName"] = 51690,
+						["use_remaining"] = false,
+						["type"] = "status",
+						["names"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["use_showOn"] = true,
+						["remaining_operator"] = "<=",
+						["event"] = "Cooldown Progress (Spell)",
+						["use_genericShowOn"] = true,
+						["realSpellName"] = "影舞步",
+						["use_spellName"] = true,
+						["spellIds"] = {
+						},
+						["use_itemName"] = true,
+						["unevent"] = "auto",
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+						["showOn"] = "showAlways",
+						["spellName"] = 12472,
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["text1"] = "%s",
+			["icon"] = true,
+			["zoom"] = 0,
+			["text2"] = "%p",
+			["auto"] = true,
+			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["text2Enabled"] = false,
-			["alpha"] = 1,
-			["text2FontSize"] = 24,
+			["id"] = "影舞步CD",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -1055,20 +1195,17 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["text1"] = "%s",
-			["icon"] = true,
-			["zoom"] = 0,
-			["text2"] = "%p",
-			["auto"] = true,
-			["glow"] = false,
-			["id"] = "影舞步CD",
-			["text1FontFlags"] = "OUTLINE",
 			["frameStrata"] = 3,
 			["width"] = 35,
-			["internalVersion"] = 11,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "AQrSDpjmK9G",
 			["inverse"] = false,
-			["text1Containment"] = "INSIDE",
+			["cooldownTextEnabled"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -1085,11 +1222,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 		},
 		["DS骰子1"] = {
@@ -1113,11 +1246,11 @@ WeakAurasSaved = {
 						["buffShowOn"] = "showOnActive",
 						["type"] = "status",
 						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
 						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
-						["event"] = "Action Usable",
 						["use_absorbMode"] = true,
+						["event"] = "Action Usable",
+						["unevent"] = "auto",
 						["realSpellName"] = "命运骨骰",
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -1135,19 +1268,19 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
-						["power"] = "5",
+						["unevent"] = "auto",
 						["power_operator"] = "==",
 						["use_absorbMode"] = true,
 						["event"] = "Power",
-						["unit"] = "player",
-						["unevent"] = "auto",
-						["powertype"] = 4,
-						["subeventSuffix"] = "_CAST_START",
-						["duration"] = "1",
-						["subeventPrefix"] = "SPELL",
-						["use_power"] = true,
-						["use_powertype"] = true,
 						["use_unit"] = true,
+						["use_power"] = true,
+						["powertype"] = 4,
+						["power"] = "5",
+						["duration"] = "1",
+						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["use_powertype"] = true,
+						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
 					},
@@ -1304,7 +1437,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["xOffset"] = 100,
+			["text2Point"] = "CENTER",
 			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
@@ -1313,10 +1446,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "TOPRIGHT",
-			["stickyDuration"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["text2Point"] = "CENTER",
+			["parent"] = "蛋神",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -1335,32 +1473,22 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Containment"] = "INSIDE",
+			["useglowColor"] = false,
 			["selfPoint"] = "CENTER",
+			["text2Font"] = "Friz Quadrata TT",
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
-			["text1Color"] = {
-				1, -- [1]
-				0.996078431372549, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["text1Font"] = "伤害数字",
+			["internalVersion"] = 11,
 			["config"] = {
 			},
 			["text1FontFlags"] = "THICKOUTLINE",
 			["regionType"] = "icon",
-			["internalVersion"] = 11,
+			["xOffset"] = 100,
 			["anchorFrameType"] = "SCREEN",
 			["text2FontSize"] = 24,
 			["text2Enabled"] = false,
-			["text1"] = "R1",
+			["text1"] = "%s",
 			["frameStrata"] = 1,
 			["text2Color"] = {
 				1, -- [1]
@@ -1368,20 +1496,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2"] = "%p",
-			["auto"] = true,
 			["zoom"] = 0,
+			["auto"] = true,
+			["text2"] = "%p",
 			["id"] = "DS骰子1",
-			["cooldownTextEnabled"] = true,
-			["alpha"] = 1,
-			["width"] = 35,
-			["text2Font"] = "Friz Quadrata TT",
-			["uid"] = "wdImuxY9PUO",
-			["inverse"] = false,
-			["parent"] = "蛋神",
-			["conditions"] = {
-			},
-			["useglowColor"] = false,
 			["actions"] = {
 				["start"] = {
 				},
@@ -1390,6 +1508,21 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["alpha"] = 1,
+			["width"] = 35,
+			["cooldownTextEnabled"] = true,
+			["uid"] = "wdImuxY9PUO",
+			["inverse"] = false,
+			["text1Color"] = {
+				1, -- [1]
+				0.996078431372549, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["conditions"] = {
+			},
+			["stickyDuration"] = false,
+			["text1Containment"] = "INSIDE",
 		},
 		["冲动BUFF"] = {
 			["glow"] = false,
@@ -1410,14 +1543,9 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["parent"] = "蛋神",
+			["frameStrata"] = 1,
 			["text1Enabled"] = true,
+			["parent"] = "蛋神",
 			["stickyDuration"] = false,
 			["glowColor"] = {
 				1, -- [1]
@@ -1426,32 +1554,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "BOTTOMRIGHT",
-			["xOffset"] = -100,
+			["internalVersion"] = 11,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura2",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
-						["unit"] = "player",
-						["spellIds"] = {
-						},
-						["subeventPrefix"] = "SPELL",
-						["auraspellids"] = {
-							"13750", -- [1]
-						},
-						["names"] = {
-						},
-						["useExactSpellId"] = true,
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = -10,
-			},
+			["xOffset"] = -100,
 			["load"] = {
 				["use_class"] = true,
 				["talent"] = {
@@ -1491,7 +1597,7 @@ WeakAurasSaved = {
 				},
 			},
 			["authorMode"] = true,
-			["text1Containment"] = "INSIDE",
+			["cooldownTextEnabled"] = true,
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
@@ -1505,9 +1611,10 @@ WeakAurasSaved = {
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["text2FontSize"] = 24,
 			["text2Enabled"] = false,
+			["text2FontSize"] = 24,
+			["authorOptions"] = {
+			},
 			["text1"] = "%s",
 			["text2Point"] = "CENTER",
 			["zoom"] = 0,
@@ -1533,18 +1640,44 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "冲动BUFF",
-			["text1Font"] = "Friz Quadrata TT",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["alpha"] = 1,
 			["width"] = 32,
-			["cooldownTextEnabled"] = true,
+			["text1Font"] = "Friz Quadrata TT",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["internalVersion"] = 11,
+			["text1Containment"] = "INSIDE",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura2",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["unit"] = "player",
+						["auraspellids"] = {
+							"13750", -- [1]
+						},
+						["names"] = {
+						},
+						["useExactSpellId"] = true,
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
 			},
 		},
 		["连击"] = {
@@ -1561,15 +1694,10 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["text1Enabled"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["parent"] = "蛋神",
+			["frameStrata"] = 1,
 			["stickyDuration"] = false,
+			["parent"] = "蛋神",
+			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -1577,33 +1705,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "BOTTOM",
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura2",
-						["useExactSpellId"] = true,
-						["matchesShowOn"] = "showAlways",
-						["event"] = "Health",
-						["unit"] = "player",
-						["spellIds"] = {
-						},
-						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
-						["names"] = {
-						},
-						["auraspellids"] = {
-							"193356", -- [1]
-						},
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = -10,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["desaturate"] = false,
+			["cooldownTextEnabled"] = true,
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -1648,20 +1758,25 @@ WeakAurasSaved = {
 			},
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "ACShine",
-			["text1Font"] = "Friz Quadrata TT",
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "41Jk9hDKxKn",
+			["text1FontFlags"] = "OUTLINE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["text2FontSize"] = 24,
 			["text2Enabled"] = false,
+			["text2FontSize"] = 24,
+			["text1Font"] = "Friz Quadrata TT",
 			["text1"] = "连击",
 			["glow"] = true,
 			["zoom"] = 0,
@@ -1687,15 +1802,10 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "连击",
-			["internalVersion"] = 11,
+			["text1Enabled"] = true,
 			["alpha"] = 1,
 			["width"] = 32,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["internalVersion"] = 11,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -1728,7 +1838,163 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["cooldownTextEnabled"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura2",
+						["useExactSpellId"] = true,
+						["matchesShowOn"] = "showAlways",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["names"] = {
+						},
+						["auraspellids"] = {
+							"193356", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
+			},
+		},
+		["Details! Aura Group"] = {
+			["grow"] = "RIGHT",
+			["controlledChildren"] = {
+			},
+			["xOffset"] = -678.999450683594,
+			["yOffset"] = 212.765991210938,
+			["anchorPoint"] = "CENTER",
+			["space"] = 0,
+			["background"] = "None",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["names"] = {
+						},
+						["spellIds"] = {
+						},
+						["buffShowOn"] = "showOnActive",
+						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = 1,
+			},
+			["radius"] = 200,
+			["selfPoint"] = "LEFT",
+			["align"] = "CENTER",
+			["rotation"] = 0,
+			["height"] = 20,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["affixes"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["talent3"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["animate"] = true,
+			["scale"] = 1,
+			["border"] = "None",
+			["regionType"] = "dynamicgroup",
+			["sort"] = "none",
+			["expanded"] = true,
+			["constantFactor"] = "RADIUS",
+			["borderOffset"] = 16,
+			["id"] = "Details! Aura Group",
+			["internalVersion"] = 11,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["backgroundInset"] = 0,
+			["config"] = {
+			},
+			["authorOptions"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["conditions"] = {
+			},
+			["stagger"] = 0,
+			["width"] = 199.999969482422,
 		},
 		["背景4"] = {
 			["user_y"] = 0,
@@ -1944,13 +2210,13 @@ WeakAurasSaved = {
 						["spellName"] = 193316,
 						["type"] = "status",
 						["subeventPrefix"] = "SPELL",
-						["use_targetRequired"] = false,
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
 							"残忍精准", -- [1]
 						},
-						["event"] = "Action Usable",
 						["use_absorbMode"] = true,
+						["event"] = "Action Usable",
+						["use_targetRequired"] = false,
 						["realSpellName"] = "命运骨骰",
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -1968,19 +2234,19 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["power_operator"] = "==",
 						["use_absorbMode"] = true,
 						["event"] = "Power",
-						["use_unit"] = true,
-						["unevent"] = "auto",
-						["powertype"] = 4,
-						["power"] = "5",
-						["duration"] = "1",
-						["subeventPrefix"] = "SPELL",
-						["use_power"] = true,
-						["use_powertype"] = true,
 						["unit"] = "player",
+						["use_power"] = true,
+						["powertype"] = 4,
+						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
+						["use_unit"] = true,
+						["power"] = "5",
+						["use_powertype"] = true,
+						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
 					},
@@ -2069,7 +2335,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["xOffset"] = 100,
+			["text2Point"] = "CENTER",
 			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
@@ -2078,10 +2344,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "TOPRIGHT",
-			["stickyDuration"] = false,
+			["text1Containment"] = "INSIDE",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["text2Point"] = "CENTER",
+			["parent"] = "蛋神",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -2100,22 +2366,32 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Containment"] = "INSIDE",
-			["text2Font"] = "Friz Quadrata TT",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["selfPoint"] = "CENTER",
+			["text1Font"] = "伤害数字",
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
-			["text1Font"] = "伤害数字",
-			["useglowColor"] = false,
+			["text1Color"] = {
+				0.96078431372549, -- [1]
+				1, -- [2]
+				0.988235294117647, -- [3]
+				1, -- [4]
+			},
+			["internalVersion"] = 11,
 			["config"] = {
 			},
 			["text1FontFlags"] = "THICKOUTLINE",
 			["regionType"] = "icon",
-			["internalVersion"] = 11,
+			["xOffset"] = 100,
 			["anchorFrameType"] = "SCREEN",
 			["text2FontSize"] = 24,
 			["text2Enabled"] = false,
-			["text1"] = "R2",
+			["text1"] = "%s",
 			["frameStrata"] = 1,
 			["text2Color"] = {
 				1, -- [1]
@@ -2123,30 +2399,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2"] = "%p",
-			["auto"] = true,
 			["zoom"] = 0,
+			["auto"] = true,
+			["text2"] = "%p",
 			["id"] = "DS骰子2",
-			["cooldownTextEnabled"] = true,
-			["alpha"] = 1,
-			["width"] = 35,
-			["text1Color"] = {
-				0.96078431372549, -- [1]
-				1, -- [2]
-				0.988235294117647, -- [3]
-				1, -- [4]
-			},
-			["uid"] = "jwb(Gxkk4a6",
-			["inverse"] = false,
-			["parent"] = "蛋神",
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -2155,6 +2411,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["alpha"] = 1,
+			["width"] = 35,
+			["cooldownTextEnabled"] = true,
+			["uid"] = "jwb(Gxkk4a6",
+			["inverse"] = false,
+			["useglowColor"] = false,
+			["conditions"] = {
+			},
+			["stickyDuration"] = false,
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["刀锋冲刺CD"] = {
 			["text2Point"] = "CENTER",
@@ -2181,16 +2447,16 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["subeventPrefix"] = "SPELL",
 						["remaining"] = "95",
-						["debuffType"] = "HELPFUL",
 						["spellName"] = 271877,
+						["debuffType"] = "HELPFUL",
 						["use_unit"] = true,
 						["type"] = "status",
 						["duration"] = "1",
-						["unevent"] = "auto",
-						["use_showOn"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["use_itemName"] = true,
+						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
+						["use_itemName"] = true,
+						["unevent"] = "auto",
 						["realSpellName"] = "刀锋冲刺",
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -2210,19 +2476,14 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["frameStrata"] = 3,
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["text2Font"] = "Friz Quadrata TT",
-			["parent"] = "蛋神",
-			["cooldownTextEnabled"] = true,
 			["text1Containment"] = "INSIDE",
+			["parent"] = "蛋神",
+			["text2Font"] = "Friz Quadrata TT",
+			["stickyDuration"] = false,
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2233,7 +2494,7 @@ WeakAurasSaved = {
 			["version"] = 21,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["internalVersion"] = 11,
+			["cooldownTextEnabled"] = true,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -2258,13 +2519,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
 				["use_talent"] = true,
-				["use_class"] = true,
-				["race"] = {
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -2272,26 +2536,23 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
 			["desaturate"] = false,
-			["glow"] = false,
+			["cooldownEdge"] = false,
 			["uid"] = "ckK1k0K1ptc",
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "Pixel",
@@ -2305,10 +2566,14 @@ WeakAurasSaved = {
 			["width"] = 35,
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["frameStrata"] = 3,
 			["alpha"] = 1,
+			["text1Font"] = "Friz Quadrata TT",
 			["text2FontSize"] = 24,
-			["authorOptions"] = {
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["text1"] = "%s",
 			["animation"] = {
@@ -2328,16 +2593,22 @@ WeakAurasSaved = {
 			["text2"] = "%p",
 			["zoom"] = 0,
 			["auto"] = true,
-			["text1Font"] = "Friz Quadrata TT",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["id"] = "刀锋冲刺CD",
-			["icon"] = true,
+			["authorOptions"] = {
+			},
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownEdge"] = false,
+			["icon"] = true,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["stickyDuration"] = false,
+			["glow"] = false,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -2354,12 +2625,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["internalVersion"] = 11,
 		},
 		["爆击"] = {
 			["text2Point"] = "CENTER",
@@ -2379,10 +2645,10 @@ WeakAurasSaved = {
 						["useExactSpellId"] = true,
 						["matchesShowOn"] = "showAlways",
 						["event"] = "Health",
-						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
-						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
 						},
@@ -2414,10 +2680,10 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["desaturate"] = false,
-			["stickyDuration"] = false,
-			["parent"] = "蛋神",
+			["frameStrata"] = 1,
 			["text1Containment"] = "OUTSIDE",
+			["parent"] = "蛋神",
+			["stickyDuration"] = false,
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2425,10 +2691,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "BOTTOM",
-			["xOffset"] = -20,
+			["text2Font"] = "Friz Quadrata TT",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["useglowColor"] = false,
+			["xOffset"] = -20,
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -2454,7 +2720,12 @@ WeakAurasSaved = {
 			},
 			["text1Enabled"] = true,
 			["authorMode"] = true,
-			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "ACShine",
 			["text1Color"] = {
@@ -2473,9 +2744,9 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["text2FontSize"] = 24,
 			["text2Enabled"] = false,
+			["text2FontSize"] = 24,
+			["cooldownTextEnabled"] = true,
 			["text1"] = "爆击",
 			["text1FontFlags"] = "OUTLINE",
 			["zoom"] = 0,
@@ -2501,19 +2772,14 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "爆击",
-			["text1Font"] = "Friz Quadrata TT",
+			["desaturate"] = false,
 			["alpha"] = 1,
 			["width"] = 32,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["text1Font"] = "Friz Quadrata TT",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["text2Font"] = "Friz Quadrata TT",
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -2542,15 +2808,10 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["cooldownTextEnabled"] = true,
+			["useglowColor"] = false,
 		},
 		["连击点2"] = {
-			["color"] = {
-				0.63921568627451, -- [1]
-				0.752941176470588, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = -52.999877929688,
 			["yOffset"] = 30,
 			["anchorPoint"] = "CENTER",
 			["url"] = "https://wago.io/rkHttDJBQ/22",
@@ -2590,18 +2851,18 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["trigger"] = {
-						["itemName"] = 150936,
+						["type"] = "status",
 						["unevent"] = "auto",
 						["use_inverse"] = true,
-						["use_itemName"] = true,
-						["use_unit"] = true,
-						["duration"] = "1",
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Item Equipped",
 						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["itemName"] = 150936,
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
+						["use_itemName"] = true,
 					},
 					["untrigger"] = {
 						["itemName"] = 150936,
@@ -2611,22 +2872,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["internalVersion"] = 11,
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
 			["discrete_rotation"] = 0,
 			["version"] = 22,
@@ -2697,23 +2943,43 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
-			["parent"] = "蛋神",
+			["authorOptions"] = {
+			},
 			["semver"] = "1.0.0-22",
-			["selfPoint"] = "CENTER",
-			["id"] = "连击点2",
 			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["id"] = "连击点2",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["config"] = {
 			},
 			["uid"] = "gMxkAKo09ha",
-			["xOffset"] = -52.999877929688,
-			["authorOptions"] = {
+			["color"] = {
+				0.63921568627451, -- [1]
+				0.752941176470588, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+			["parent"] = "蛋神",
 			["conditions"] = {
 			},
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
+			["width"] = 70,
+			["frameStrata"] = 1,
 		},
 		["CD"] = {
 			["glow"] = false,
@@ -2732,10 +2998,10 @@ WeakAurasSaved = {
 						["useExactSpellId"] = true,
 						["matchesShowOn"] = "showAlways",
 						["event"] = "Health",
-						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
-						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
 						["auraspellids"] = {
 							"193359", -- [1]
 						},
@@ -2767,8 +3033,6 @@ WeakAurasSaved = {
 					["preset"] = "bounceDecay",
 				},
 			},
-			["text2Point"] = "CENTER",
-			["parent"] = "蛋神",
 			["actions"] = {
 				["start"] = {
 					["glow_color"] = {
@@ -2789,6 +3053,8 @@ WeakAurasSaved = {
 				},
 			},
 			["desaturate"] = false,
+			["parent"] = "蛋神",
+			["stickyDuration"] = false,
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2799,7 +3065,7 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["useglowColor"] = false,
+			["text2Font"] = "Friz Quadrata TT",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -2823,9 +3089,10 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text2Font"] = "Friz Quadrata TT",
+			["authorOptions"] = {
+			},
 			["authorMode"] = true,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 100,
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
@@ -2836,13 +3103,18 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["xOffset"] = 100,
+			["text1Containment"] = "OUTSIDE",
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["width"] = 32,
 			["alpha"] = 1,
 			["text2FontSize"] = 24,
-			["text1Containment"] = "OUTSIDE",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1"] = "冷却",
 			["text2Color"] = {
 				1, -- [1]
@@ -2855,14 +3127,13 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["frameStrata"] = 1,
 			["id"] = "CD",
-			["text1Font"] = "Friz Quadrata TT",
+			["text2Point"] = "CENTER",
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["authorOptions"] = {
-			},
+			["text1Font"] = "Friz Quadrata TT",
 			["uid"] = "HV)rcjXSHVE",
 			["inverse"] = false,
-			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -2879,12 +3150,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["useglowColor"] = false,
 		},
 		["DS影袭3"] = {
 			["text2Point"] = "CENTER",
@@ -2925,7 +3191,12 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["glow"] = false,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
@@ -2934,9 +3205,6 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "BOTTOMRIGHT",
-			["stickyDuration"] = false,
-			["text2FontFlags"] = "OUTLINE",
-			["height"] = 35,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -2945,11 +3213,11 @@ WeakAurasSaved = {
 						},
 						["spellName"] = 193315,
 						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
 						["use_targetRequired"] = false,
 						["buffShowOn"] = "showOnActive",
-						["event"] = "Action Usable",
 						["debuffType"] = "HELPFUL",
+						["event"] = "Action Usable",
+						["subeventSuffix"] = "_CAST_START",
 						["realSpellName"] = "影袭",
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -2971,13 +3239,13 @@ WeakAurasSaved = {
 						["use_powertype"] = true,
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["power_operator"] = "<=",
-						["power"] = "4",
-						["event"] = "Power",
-						["use_power"] = true,
 						["unevent"] = "auto",
+						["power_operator"] = "<=",
 						["duration"] = "1",
+						["event"] = "Power",
+						["subeventSuffix"] = "_CAST_START",
+						["use_power"] = true,
+						["power"] = "4",
 						["spellIds"] = {
 							1784, -- [1]
 						},
@@ -2995,26 +3263,29 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
-						["use_percentpower"] = false,
-						["unevent"] = "auto",
+						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
 						["power_operator"] = ">=",
 						["use_absorbMode"] = true,
 						["event"] = "Power",
-						["unit"] = "player",
 						["use_unit"] = true,
+						["use_percentpower"] = false,
 						["powertype"] = 3,
-						["power"] = "135",
-						["duration"] = "1",
-						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
-						["use_powertype"] = true,
+						["unevent"] = "auto",
 						["use_power"] = true,
+						["unit"] = "player",
+						["power"] = "135",
+						["use_powertype"] = true,
+						["duration"] = "1",
 					},
 					["untrigger"] = {
 					},
 				}, -- [3]
 				["activeTriggerMode"] = -10,
 			},
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 35,
+			["parent"] = "蛋神",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -3033,50 +3304,45 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "蛋神",
-			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
+			["text1Enabled"] = false,
 			["icon"] = true,
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
-			["text1Color"] = {
-				0.972549019607843, -- [1]
-				0.996078431372549, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["text1Font"] = "伤害数字",
-			["uid"] = ")axvfN9nYZU",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
+			["uid"] = ")axvfN9nYZU",
 			["text1FontFlags"] = "THICKOUTLINE",
+			["regionType"] = "icon",
+			["glow"] = false,
 			["width"] = 35,
 			["text2FontSize"] = 24,
 			["alpha"] = 1,
 			["text1"] = "3",
 			["internalVersion"] = 11,
 			["frameStrata"] = 1,
-			["zoom"] = 0,
-			["auto"] = true,
 			["text2"] = "%p",
+			["auto"] = true,
+			["zoom"] = 0,
 			["id"] = "DS影袭3",
-			["xOffset"] = 100,
+			["text1Color"] = {
+				0.972549019607843, -- [1]
+				0.996078431372549, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["authorOptions"] = {
-			},
+			["xOffset"] = 100,
 			["config"] = {
 			},
 			["inverse"] = false,
 			["text1Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownTextEnabled"] = true,
-			["text1Enabled"] = false,
 		},
 		["DS影袭1"] = {
 			["glow"] = false,
@@ -3095,11 +3361,11 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
-						["use_targetRequired"] = false,
 						["subeventSuffix"] = "_CAST_START",
 						["spellName"] = 193315,
-						["event"] = "Action Usable",
 						["buffShowOn"] = "showOnActive",
+						["event"] = "Action Usable",
+						["use_targetRequired"] = false,
 						["realSpellName"] = "影袭",
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -3122,13 +3388,13 @@ WeakAurasSaved = {
 						["use_powertype"] = true,
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
-						["unevent"] = "auto",
-						["power_operator"] = "<=",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Power",
-						["duration"] = "1",
 						["power"] = "4",
+						["power_operator"] = "<=",
 						["use_absorbMode"] = true,
+						["event"] = "Power",
+						["unevent"] = "auto",
+						["duration"] = "1",
+						["subeventSuffix"] = "_CAST_START",
 						["spellIds"] = {
 							1784, -- [1]
 						},
@@ -3146,20 +3412,20 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
-						["unit"] = "player",
-						["power"] = "45",
+						["subeventPrefix"] = "SPELL",
+						["unevent"] = "auto",
 						["power_operator"] = ">=",
 						["use_power"] = true,
 						["event"] = "Power",
-						["use_percentpower"] = false,
 						["use_unit"] = true,
+						["unit"] = "player",
 						["powertype"] = 3,
-						["subeventSuffix"] = "_CAST_START",
-						["use_absorbMode"] = true,
-						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
-						["use_powertype"] = true,
+						["power"] = "45",
 						["duration"] = "1",
+						["use_percentpower"] = false,
+						["subeventSuffix"] = "_CAST_START",
+						["use_powertype"] = true,
+						["use_absorbMode"] = true,
 					},
 					["untrigger"] = {
 					},
@@ -3167,17 +3433,17 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["power_operator"] = "<",
-						["use_absorbMode"] = true,
-						["event"] = "Power",
-						["subeventPrefix"] = "SPELL",
-						["use_power"] = true,
-						["power"] = "90",
 						["unevent"] = "auto",
+						["power_operator"] = "<",
 						["duration"] = "1",
+						["event"] = "Power",
 						["use_unit"] = true,
+						["power"] = "90",
+						["use_power"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["use_absorbMode"] = true,
 						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
 					},
@@ -3187,12 +3453,7 @@ WeakAurasSaved = {
 			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["text2Point"] = "CENTER",
 			["text1Containment"] = "INSIDE",
 			["glowColor"] = {
 				1, -- [1]
@@ -3201,10 +3462,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "BOTTOMRIGHT",
-			["parent"] = "蛋神",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["text2Point"] = "CENTER",
+			["parent"] = "蛋神",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -3223,13 +3489,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
+			["useglowColor"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -3244,6 +3504,7 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["internalVersion"] = 11,
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
@@ -3252,10 +3513,6 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 11,
-			["uid"] = "Bvs9OGErL)m",
-			["text1FontFlags"] = "THICKOUTLINE",
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 				},
@@ -3264,6 +3521,15 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
+			["uid"] = "Bvs9OGErL)m",
+			["text1FontFlags"] = "THICKOUTLINE",
+			["regionType"] = "icon",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["width"] = 35,
 			["text2FontSize"] = 24,
 			["alpha"] = 1,
@@ -3271,12 +3537,12 @@ WeakAurasSaved = {
 			["text1Font"] = "伤害数字",
 			["authorOptions"] = {
 			},
-			["text2"] = "%p",
-			["auto"] = true,
 			["zoom"] = 0,
+			["auto"] = true,
+			["text2"] = "%p",
 			["id"] = "DS影袭1",
-			["frameStrata"] = 1,
 			["text2Enabled"] = false,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextEnabled"] = true,
 			["config"] = {
@@ -3285,8 +3551,8 @@ WeakAurasSaved = {
 			["stickyDuration"] = false,
 			["conditions"] = {
 			},
+			["desaturate"] = false,
 			["text2Font"] = "Friz Quadrata TT",
-			["useglowColor"] = false,
 		},
 		["剑刃乱舞BUFF"] = {
 			["text2Point"] = "CENTER",
@@ -3302,8 +3568,6 @@ WeakAurasSaved = {
 			["internalVersion"] = 11,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["glow"] = true,
-			["parent"] = "蛋神",
 			["actions"] = {
 				["start"] = {
 					["glow_color"] = {
@@ -3324,6 +3588,8 @@ WeakAurasSaved = {
 				},
 			},
 			["stickyDuration"] = false,
+			["parent"] = "蛋神",
+			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -3334,28 +3600,7 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura2",
-						["auraspellids"] = {
-							"13877", -- [1]
-						},
-						["event"] = "Health",
-						["unit"] = "player",
-						["spellIds"] = {
-						},
-						["subeventPrefix"] = "SPELL",
-						["useExactSpellId"] = true,
-						["names"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = -10,
+			["authorOptions"] = {
 			},
 			["load"] = {
 				["use_class"] = true,
@@ -3379,21 +3624,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["text2Font"] = "Friz Quadrata TT",
 			["authorMode"] = true,
-			["text1Containment"] = "INSIDE",
+			["cooldownTextEnabled"] = true,
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
 			["config"] = {
 			},
-			["cooldownTextEnabled"] = true,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["width"] = 32,
-			["alpha"] = 1,
-			["text2FontSize"] = 24,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -3410,6 +3648,17 @@ WeakAurasSaved = {
 					["preset"] = "bounceDecay",
 				},
 			},
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["width"] = 32,
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1"] = "%s",
 			["text2Color"] = {
 				1, -- [1]
@@ -3422,35 +3671,47 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["frameStrata"] = 1,
 			["id"] = "剑刃乱舞BUFF",
+			["glow"] = true,
+			["text2Enabled"] = false,
+			["anchorFrameType"] = "SCREEN",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2Enabled"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["text2Font"] = "Friz Quadrata TT",
 			["uid"] = "06)0E(J1gVF",
 			["inverse"] = false,
-			["desaturate"] = false,
+			["text1Containment"] = "INSIDE",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura2",
+						["auraspellids"] = {
+							"13877", -- [1]
+						},
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["unit"] = "player",
+						["useExactSpellId"] = true,
+						["names"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
 			},
 		},
 		["连击点4"] = {
-			["color"] = {
-				1, -- [1]
-				0.67843137254902, -- [2]
-				0.215686274509804, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 48.999755859375,
 			["yOffset"] = 30,
 			["anchorPoint"] = "CENTER",
 			["url"] = "https://wago.io/rkHttDJBQ/22",
@@ -3490,18 +3751,18 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["trigger"] = {
-						["itemName"] = 150936,
+						["type"] = "status",
 						["unevent"] = "auto",
 						["use_inverse"] = true,
-						["use_itemName"] = true,
-						["use_unit"] = true,
-						["duration"] = "1",
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Item Equipped",
 						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["itemName"] = 150936,
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
+						["use_itemName"] = true,
 					},
 					["untrigger"] = {
 						["itemName"] = 150936,
@@ -3511,22 +3772,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["internalVersion"] = 11,
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
 			["discrete_rotation"] = 0,
 			["version"] = 22,
@@ -3597,31 +3843,46 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
-			["parent"] = "蛋神",
+			["authorOptions"] = {
+			},
 			["semver"] = "1.0.0-22",
-			["selfPoint"] = "CENTER",
-			["id"] = "连击点4",
 			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["id"] = "连击点4",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["config"] = {
 			},
 			["uid"] = "80SeJXSMxQ0",
-			["xOffset"] = 48.999755859375,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-			},
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-		},
-		["连击点1"] = {
 			["color"] = {
-				0.509803921568627, -- [1]
-				0.603921568627451, -- [2]
-				1, -- [3]
+				1, -- [1]
+				0.67843137254902, -- [2]
+				0.215686274509804, -- [3]
 				1, -- [4]
 			},
+			["parent"] = "蛋神",
+			["conditions"] = {
+			},
+			["width"] = 70,
+			["frameStrata"] = 1,
+		},
+		["连击点1"] = {
+			["xOffset"] = -103.99987792969,
 			["yOffset"] = 30,
 			["anchorPoint"] = "CENTER",
 			["url"] = "https://wago.io/rkHttDJBQ/22",
@@ -3644,12 +3905,12 @@ WeakAurasSaved = {
 						["use_powertype"] = true,
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
-						["unevent"] = "auto",
+						["power"] = "1",
 						["power_operator"] = ">=",
 						["event"] = "Power",
 						["use_unit"] = true,
 						["duration"] = "1",
-						["power"] = "1",
+						["unevent"] = "auto",
 						["spellIds"] = {
 						},
 						["subeventPrefix"] = "SPELL",
@@ -3664,18 +3925,18 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["trigger"] = {
-						["itemName"] = 150936,
+						["type"] = "status",
 						["unevent"] = "auto",
 						["use_inverse"] = true,
-						["use_itemName"] = true,
-						["use_unit"] = true,
-						["duration"] = "1",
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Item Equipped",
 						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["itemName"] = 150936,
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
+						["use_itemName"] = true,
 					},
 					["untrigger"] = {
 						["itemName"] = 150936,
@@ -3685,22 +3946,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["internalVersion"] = 11,
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
 			["discrete_rotation"] = 0,
 			["version"] = 22,
@@ -3771,23 +4017,43 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
-			["parent"] = "蛋神",
+			["authorOptions"] = {
+			},
 			["semver"] = "1.0.0-22",
-			["selfPoint"] = "CENTER",
-			["id"] = "连击点1",
 			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["id"] = "连击点1",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["config"] = {
 			},
 			["uid"] = "z6KCLiDhzU3",
-			["xOffset"] = -103.99987792969,
-			["authorOptions"] = {
+			["color"] = {
+				0.509803921568627, -- [1]
+				0.603921568627451, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+			["parent"] = "蛋神",
 			["conditions"] = {
 			},
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
+			["width"] = 70,
+			["frameStrata"] = 1,
 		},
 		["背景5"] = {
 			["user_y"] = 0,
@@ -3985,12 +4251,7 @@ WeakAurasSaved = {
 			["backgroundOffset"] = 0,
 		},
 		["连击点3"] = {
-			["color"] = {
-				1, -- [1]
-				0.8, -- [2]
-				0.011764705882353, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = -2.0000610351562,
 			["yOffset"] = 30,
 			["anchorPoint"] = "CENTER",
 			["url"] = "https://wago.io/rkHttDJBQ/22",
@@ -4030,18 +4291,18 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["trigger"] = {
-						["itemName"] = 150936,
+						["type"] = "status",
 						["unevent"] = "auto",
 						["use_inverse"] = true,
-						["use_itemName"] = true,
-						["use_unit"] = true,
-						["duration"] = "1",
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Item Equipped",
 						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["itemName"] = 150936,
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
+						["use_itemName"] = true,
 					},
 					["untrigger"] = {
 						["itemName"] = 150936,
@@ -4051,22 +4312,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["internalVersion"] = 11,
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
 			["discrete_rotation"] = 0,
 			["version"] = 22,
@@ -4137,46 +4383,152 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
-			["parent"] = "蛋神",
+			["authorOptions"] = {
+			},
 			["semver"] = "1.0.0-22",
-			["selfPoint"] = "CENTER",
-			["id"] = "连击点3",
 			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["id"] = "连击点3",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["config"] = {
 			},
 			["uid"] = ")MYZNkF3dcg",
-			["xOffset"] = -2.0000610351562,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				0.8, -- [2]
+				0.011764705882353, -- [3]
+				1, -- [4]
 			},
+			["parent"] = "蛋神",
 			["conditions"] = {
 			},
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
+			["width"] = 70,
+			["frameStrata"] = 1,
 		},
-		["冲动CD"] = {
-			["glow"] = false,
-			["text1FontSize"] = 12,
-			["cooldownTextEnabled"] = true,
+		["DS影袭2"] = {
+			["text2Point"] = "CENTER",
+			["text1FontSize"] = 20,
+			["xOffset"] = 100,
 			["yOffset"] = 64,
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["use_absorbMode"] = true,
+						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
+						["type"] = "status",
+						["use_targetRequired"] = false,
+						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["event"] = "Action Usable",
+						["duration"] = "1",
+						["realSpellName"] = "影袭",
+						["use_spellName"] = true,
+						["spellIds"] = {
+						},
+						["unevent"] = "auto",
+						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["buffShowOn"] = "showOnActive",
+						["spellName"] = 193315,
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["use_absorbMode"] = true,
+						["use_unit"] = true,
+						["powertype"] = 4,
+						["use_powertype"] = true,
+						["buffShowOn"] = "showOnActive",
+						["type"] = "status",
+						["unevent"] = "auto",
+						["power_operator"] = "<=",
+						["debuffType"] = "HELPFUL",
+						["event"] = "Power",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["ownOnly"] = true,
+						["spellIds"] = {
+							1784, -- [1]
+						},
+						["names"] = {
+							"潜行", -- [1]
+						},
+						["power"] = "4",
+						["use_power"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["subeventPrefix"] = "SPELL",
+						["unevent"] = "auto",
+						["power_operator"] = ">=",
+						["use_absorbMode"] = true,
+						["event"] = "Power",
+						["use_percentpower"] = false,
+						["use_unit"] = true,
+						["powertype"] = 3,
+						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
+						["unit"] = "player",
+						["power"] = "90",
+						["use_powertype"] = true,
+						["use_power"] = true,
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["unevent"] = "auto",
+						["power_operator"] = "<",
+						["use_absorbMode"] = true,
+						["event"] = "Power",
+						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+						["power"] = "135",
+						["use_power"] = true,
+						["use_unit"] = true,
+						["duration"] = "1",
+					},
+					["untrigger"] = {
+					},
+				}, -- [4]
+				["activeTriggerMode"] = -10,
 			},
-			["useglowColor"] = false,
-			["text2Point"] = "CENTER",
-			["text2Font"] = "Friz Quadrata TT",
+			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -4191,44 +4543,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["url"] = "https://wago.io/4J5oydLtZ/21",
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["itemName"] = 0,
-						["use_genericShowOn"] = true,
-						["genericShowOn"] = "showAlways",
-						["unit"] = "player",
-						["remaining"] = "95",
-						["names"] = {
-						},
-						["debuffType"] = "HELPFUL",
-						["remaining_operator"] = "<=",
-						["use_remaining"] = false,
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["use_showOn"] = true,
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Cooldown Progress (Spell)",
-						["duration"] = "1",
-						["realSpellName"] = "冲动",
-						["use_spellName"] = true,
-						["spellIds"] = {
-						},
-						["use_itemName"] = true,
-						["unevent"] = "auto",
-						["use_absorbMode"] = true,
-						["use_unit"] = true,
-						["spellName"] = 13750,
-					},
-					["untrigger"] = {
-						["showOn"] = "showAlways",
-						["spellName"] = 12472,
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
+			["glow"] = false,
 			["stickyDuration"] = false,
 			["glowColor"] = {
 				1, -- [1]
@@ -4236,58 +4551,22 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Point"] = "TOPRIGHT",
-			["version"] = 21,
+			["text1Point"] = "BOTTOMRIGHT",
+			["authorOptions"] = {
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["text1Enabled"] = false,
+			["parent"] = "蛋神",
 			["load"] = {
-				["talent2"] = {
+				["use_class"] = true,
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 2,
 					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["single"] = 18,
-					["multi"] = {
-						[18] = true,
 					},
 				},
 				["class"] = {
 					["single"] = "ROGUE",
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 2,
-					["multi"] = {
-						true, -- [1]
-						true, -- [2]
-						true, -- [3]
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -4296,77 +4575,61 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["useglowColor"] = false,
 			["text1Containment"] = "INSIDE",
-			["authorOptions"] = {
-			},
-			["config"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["text2Containment"] = "INSIDE",
-			["glowType"] = "Pixel",
-			["text1Font"] = "Friz Quadrata TT",
-			["icon"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text2Enabled"] = false,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2FontSize"] = 24,
-			["frameStrata"] = 3,
-			["text1"] = "%s",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["zoom"] = 0,
-			["text2"] = "%p",
-			["auto"] = true,
-			["xOffset"] = -100,
-			["id"] = "冲动CD",
-			["desaturate"] = false,
-			["alpha"] = 1,
-			["width"] = 35,
-			["internalVersion"] = 11,
-			["uid"] = "jleMs1fz8l5",
-			["inverse"] = false,
-			["parent"] = "蛋神",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "onCooldown",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "inverse",
-						}, -- [1]
-						{
-							["value"] = {
-								0.43921568627451, -- [1]
-								0.43921568627451, -- [2]
-								0.43921568627451, -- [3]
-								1, -- [4]
-							},
-							["property"] = "color",
-						}, -- [2]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "伤害数字",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["config"] = {
+			},
+			["text1FontFlags"] = "THICKOUTLINE",
+			["regionType"] = "icon",
+			["text2Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["text2Enabled"] = false,
+			["text1"] = "2",
+			["frameStrata"] = 1,
+			["text1Color"] = {
+				0.972549019607843, -- [1]
+				0.996078431372549, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2"] = "%p",
+			["auto"] = true,
+			["zoom"] = 0,
+			["id"] = "DS影袭2",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["alpha"] = 1,
+			["width"] = 35,
+			["cooldownTextEnabled"] = true,
+			["uid"] = "9zflQMQ5mdk",
+			["inverse"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["conditions"] = {
+			},
+			["desaturate"] = false,
+			["internalVersion"] = 11,
 		},
 		["背景3"] = {
 			["user_y"] = 0,
@@ -4583,11 +4846,11 @@ WeakAurasSaved = {
 						["buffShowOn"] = "showOnActive",
 						["type"] = "status",
 						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "player",
 						["debuffType"] = "HELPFUL",
-						["event"] = "Cooldown Progress (Spell)",
 						["names"] = {
 						},
+						["event"] = "Cooldown Progress (Spell)",
+						["unit"] = "player",
 						["realSpellName"] = "斩击",
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -4610,13 +4873,13 @@ WeakAurasSaved = {
 						["use_powertype"] = true,
 						["buffShowOn"] = "showOnActive",
 						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["power_operator"] = ">=",
-						["use_absorbMode"] = true,
-						["event"] = "Power",
-						["use_power"] = true,
 						["unevent"] = "auto",
+						["power_operator"] = ">=",
 						["ownOnly"] = true,
+						["event"] = "Power",
+						["use_absorbMode"] = true,
+						["use_power"] = true,
+						["subeventSuffix"] = "_CAST_START",
 						["spellIds"] = {
 							1784, -- [1]
 						},
@@ -4649,7 +4912,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["xOffset"] = 100,
+			["text2Point"] = "CENTER",
 			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
@@ -4658,10 +4921,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "TOPRIGHT",
-			["stickyDuration"] = false,
+			["text1Containment"] = "INSIDE",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["text2Point"] = "CENTER",
+			["parent"] = "蛋神",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -4680,22 +4943,32 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Containment"] = "INSIDE",
-			["text2Font"] = "Friz Quadrata TT",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["selfPoint"] = "CENTER",
+			["text1Font"] = "伤害数字",
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
-			["text1Font"] = "伤害数字",
-			["useglowColor"] = false,
+			["text1Color"] = {
+				0.972549019607843, -- [1]
+				1, -- [2]
+				0.988235294117647, -- [3]
+				1, -- [4]
+			},
+			["internalVersion"] = 11,
 			["config"] = {
 			},
 			["text1FontFlags"] = "THICKOUTLINE",
 			["regionType"] = "icon",
-			["internalVersion"] = 11,
+			["xOffset"] = 100,
 			["anchorFrameType"] = "SCREEN",
 			["text2FontSize"] = 24,
 			["text2Enabled"] = false,
-			["text1"] = "E",
+			["text1"] = "%s",
 			["frameStrata"] = 1,
 			["text2Color"] = {
 				1, -- [1]
@@ -4703,30 +4976,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2"] = "%p",
-			["auto"] = true,
 			["zoom"] = 0,
+			["auto"] = true,
+			["text2"] = "%p",
 			["id"] = "DS斩击",
-			["cooldownTextEnabled"] = true,
-			["alpha"] = 1,
-			["width"] = 35,
-			["text1Color"] = {
-				0.972549019607843, -- [1]
-				1, -- [2]
-				0.988235294117647, -- [3]
-				1, -- [4]
-			},
-			["uid"] = "R(M3mWAF0jR",
-			["inverse"] = false,
-			["parent"] = "蛋神",
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -4735,14 +4988,19 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["alpha"] = 1,
+			["width"] = 35,
+			["cooldownTextEnabled"] = true,
+			["uid"] = "R(M3mWAF0jR",
+			["inverse"] = false,
+			["useglowColor"] = false,
+			["conditions"] = {
+			},
+			["stickyDuration"] = false,
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["连击点5"] = {
-			["color"] = {
-				1, -- [1]
-				0.290196078431373, -- [2]
-				0.258823529411765, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 99.999755859375,
 			["yOffset"] = 30,
 			["anchorPoint"] = "CENTER",
 			["url"] = "https://wago.io/rkHttDJBQ/22",
@@ -4782,18 +5040,18 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["trigger"] = {
-						["itemName"] = 150936,
+						["type"] = "status",
 						["unevent"] = "auto",
 						["use_inverse"] = true,
-						["use_itemName"] = true,
-						["use_unit"] = true,
-						["duration"] = "1",
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Item Equipped",
 						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["itemName"] = 150936,
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
+						["use_itemName"] = true,
 					},
 					["untrigger"] = {
 						["itemName"] = 150936,
@@ -4803,22 +5061,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["internalVersion"] = 11,
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
 			["discrete_rotation"] = 0,
 			["version"] = 22,
@@ -4889,23 +5132,43 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
-			["parent"] = "蛋神",
+			["authorOptions"] = {
+			},
 			["semver"] = "1.0.0-22",
-			["selfPoint"] = "CENTER",
-			["id"] = "连击点5",
 			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["id"] = "连击点5",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["config"] = {
 			},
 			["uid"] = "ML0)WXG1Txm",
-			["xOffset"] = 99.999755859375,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				0.290196078431373, -- [2]
+				0.258823529411765, -- [3]
+				1, -- [4]
 			},
+			["parent"] = "蛋神",
 			["conditions"] = {
 			},
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
+			["width"] = 70,
+			["frameStrata"] = 1,
 		},
 		["背景2"] = {
 			["user_y"] = 0,
@@ -5119,10 +5382,10 @@ WeakAurasSaved = {
 						["useExactSpellId"] = true,
 						["matchesShowOn"] = "showAlways",
 						["event"] = "Health",
-						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
-						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
 						["auraspellids"] = {
 							"199603", -- [1]
 						},
@@ -5154,11 +5417,15 @@ WeakAurasSaved = {
 					["preset"] = "bounceDecay",
 				},
 			},
-			["authorOptions"] = {
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["parent"] = "蛋神",
 			["glow"] = true,
-			["text1Containment"] = "OUTSIDE",
+			["parent"] = "蛋神",
+			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -5166,10 +5433,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "BOTTOM",
-			["text1Enabled"] = true,
+			["xOffset"] = -60,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["desaturate"] = false,
+			["text1Containment"] = "OUTSIDE",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -5195,7 +5462,7 @@ WeakAurasSaved = {
 			},
 			["stickyDuration"] = false,
 			["authorMode"] = true,
-			["internalVersion"] = 11,
+			["selfPoint"] = "CENTER",
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "ACShine",
 			["text1Color"] = {
@@ -5207,17 +5474,17 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["useglowColor"] = false,
-			["text2Color"] = {
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["width"] = 32,
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["width"] = 32,
-			["alpha"] = 1,
-			["text2FontSize"] = 24,
-			["text1FontFlags"] = "OUTLINE",
 			["text1"] = "影袭",
 			["actions"] = {
 				["start"] = {
@@ -5243,13 +5510,14 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["frameStrata"] = 1,
 			["id"] = "影袭",
-			["text1Font"] = "Friz Quadrata TT",
+			["authorOptions"] = {
+			},
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "CENTER",
+			["text1Font"] = "Friz Quadrata TT",
 			["uid"] = "ra3FmMImM)c",
 			["inverse"] = false,
-			["xOffset"] = -60,
+			["internalVersion"] = 11,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -5278,151 +5546,106 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["text1Enabled"] = true,
 		},
-		["饰品上位CD"] = {
-			["text2Point"] = "CENTER",
-			["text1FontSize"] = 12,
-			["cooldownTextEnabled"] = true,
+		["DS伏击"] = {
+			["glow"] = false,
+			["text1FontSize"] = 20,
+			["authorOptions"] = {
+			},
 			["yOffset"] = 64,
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["itemName"] = 0,
 						["duration"] = "1",
-						["genericShowOn"] = "showAlways",
-						["subeventPrefix"] = "SPELL",
-						["itemSlot"] = 13,
-						["remaining"] = "95",
 						["names"] = {
 						},
-						["spellName"] = 13750,
-						["debuffType"] = "HELPFUL",
-						["remaining_operator"] = "<=",
-						["use_remaining"] = false,
+						["buffShowOn"] = "showOnActive",
+						["type"] = "status",
 						["subeventSuffix"] = "_CAST_START",
-						["unevent"] = "auto",
-						["use_showOn"] = true,
-						["use_itemName"] = true,
-						["event"] = "Cooldown Progress (Equipment Slot)",
-						["use_itemSlot"] = true,
-						["realSpellName"] = "冲动",
+						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
+						["event"] = "Action Usable",
+						["use_absorbMode"] = true,
+						["realSpellName"] = "伏击",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["use_genericShowOn"] = true,
-						["type"] = "status",
-						["use_unit"] = true,
+						["unevent"] = "auto",
 						["unit"] = "player",
-						["use_absorbMode"] = true,
+						["use_targetRequired"] = false,
+						["spellName"] = 8676,
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
-						["showOn"] = "showAlways",
-						["itemSlot"] = 13,
-						["genericShowOn"] = "showAlways",
-						["spellName"] = 12472,
 					},
 				}, -- [1]
-				["disjunctive"] = "all",
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+							1784, -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+						["unit"] = "player",
+						["names"] = {
+							"潜行", -- [1]
+						},
+						["buffShowOn"] = "showOnActive",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
 				["activeTriggerMode"] = -10,
 			},
-			["desaturate"] = false,
-			["text2Font"] = "Friz Quadrata TT",
+			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["duration_type"] = "seconds",
 					["type"] = "none",
+					["duration_type"] = "seconds",
 				},
 				["main"] = {
-					["duration_type"] = "seconds",
 					["type"] = "none",
+					["duration_type"] = "seconds",
 				},
 				["finish"] = {
-					["duration_type"] = "seconds",
 					["type"] = "none",
+					["duration_type"] = "seconds",
 				},
 			},
-			["authorOptions"] = {
-			},
-			["text1Enabled"] = true,
-			["selfPoint"] = "CENTER",
-			["text1Containment"] = "INSIDE",
+			["text2Point"] = "CENTER",
+			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["version"] = 21,
+			["text1Point"] = "TOPRIGHT",
+			["text1Containment"] = "INSIDE",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["internalVersion"] = 11,
+			["parent"] = "蛋神",
 			["load"] = {
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["single"] = 18,
-					["multi"] = {
-						[18] = true,
-					},
-				},
-				["spec"] = {
-					["single"] = 2,
-					["multi"] = {
-						true, -- [1]
-						true, -- [2]
-						true, -- [3]
-					},
-				},
+				["use_class"] = true,
+				["use_spec"] = true,
 				["class"] = {
 					["single"] = "ROGUE",
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["difficulty"] = {
+				["spec"] = {
+					["single"] = 2,
 					["multi"] = {
 					},
 				},
@@ -5431,76 +5654,61 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["stickyDuration"] = false,
-			["xOffset"] = -60,
-			["uid"] = "EMWClEVjPnq",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "Pixel",
-			["text1Font"] = "Friz Quadrata TT",
-			["url"] = "https://wago.io/4J5oydLtZ/21",
-			["width"] = 35,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["alpha"] = 1,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2FontSize"] = 24,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1"] = "%s",
-			["frameStrata"] = 1,
-			["text2"] = "%p",
-			["zoom"] = 0,
-			["auto"] = true,
-			["glow"] = false,
-			["id"] = "饰品上位CD",
-			["useglowColor"] = false,
-			["text2Enabled"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["icon"] = true,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "蛋神",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "onCooldown",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "inverse",
-						}, -- [1]
-						{
-							["value"] = {
-								0.43921568627451, -- [1]
-								0.43921568627451, -- [2]
-								0.43921568627451, -- [3]
-								1, -- [4]
-							},
-							["property"] = "color",
-						}, -- [2]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["selfPoint"] = "CENTER",
+			["text1Font"] = "伤害数字",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Color"] = {
+				0.972549019607843, -- [1]
+				0.996078431372549, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["internalVersion"] = 11,
+			["config"] = {
+			},
+			["text1FontFlags"] = "THICKOUTLINE",
+			["regionType"] = "icon",
+			["xOffset"] = 100,
+			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["text2Enabled"] = false,
+			["text1"] = "%s",
+			["frameStrata"] = 1,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["zoom"] = 0,
+			["auto"] = true,
+			["text2"] = "%p",
+			["id"] = "DS伏击",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["alpha"] = 1,
+			["width"] = 35,
+			["cooldownTextEnabled"] = true,
+			["uid"] = "l)6dDZw0LcA",
+			["inverse"] = false,
+			["useglowColor"] = false,
+			["conditions"] = {
+			},
+			["stickyDuration"] = false,
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["背景1"] = {
 			["user_y"] = 0,
@@ -5717,20 +5925,20 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "aura2",
 						["stacksOperator"] = ">",
-						["useExactSpellId"] = true,
+						["auraspellids"] = {
+							"288988", -- [1]
+						},
 						["matchesShowOn"] = "showAlways",
 						["event"] = "Health",
-						["names"] = {
-						},
+						["subeventPrefix"] = "SPELL",
 						["stacks"] = "0",
 						["spellIds"] = {
 						},
 						["unit"] = "player",
-						["auraspellids"] = {
-							"288988", -- [1]
-						},
-						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
+						["names"] = {
+						},
+						["useExactSpellId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -5741,23 +5949,6 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["preset"] = "shrink",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["preset"] = "bounceDecay",
-				},
-			},
-			["parent"] = "蛋神",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = true,
@@ -5777,7 +5968,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["desaturate"] = false,
+			["text1Containment"] = "INSIDE",
+			["parent"] = "蛋神",
+			["stickyDuration"] = false,
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -5785,11 +5978,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "CENTER",
-			["authorOptions"] = {
-			},
+			["desaturate"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["text1Containment"] = "INSIDE",
+			["text1Enabled"] = true,
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -5813,9 +6005,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Enabled"] = true,
+			["internalVersion"] = 11,
 			["authorMode"] = true,
-			["xOffset"] = 60,
+			["useglowColor"] = false,
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
@@ -5826,13 +6018,13 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useglowColor"] = false,
+			["cooldownTextEnabled"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["width"] = 32,
 			["alpha"] = 1,
 			["text2FontSize"] = 24,
-			["cooldownTextEnabled"] = true,
+			["glow"] = false,
 			["text1"] = "%s",
 			["text2Color"] = {
 				1, -- [1]
@@ -5845,13 +6037,28 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["frameStrata"] = 1,
 			["id"] = "审时度势",
-			["text1Font"] = "Friz Quadrata TT",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["preset"] = "bounceDecay",
+				},
+			},
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["internalVersion"] = 11,
+			["text1Font"] = "Friz Quadrata TT",
 			["uid"] = "eyT6coTkIhC",
 			["inverse"] = false,
-			["stickyDuration"] = false,
+			["xOffset"] = 60,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -5868,7 +6075,8 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["glow"] = false,
+			["authorOptions"] = {
+			},
 		},
 		["攻速"] = {
 			["text2Point"] = "CENTER",
@@ -5887,10 +6095,10 @@ WeakAurasSaved = {
 						["useExactSpellId"] = true,
 						["matchesShowOn"] = "showAlways",
 						["event"] = "Health",
-						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
-						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
 						},
@@ -5907,15 +6115,10 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["stickyDuration"] = false,
 			["parent"] = "蛋神",
-			["text1Containment"] = "OUTSIDE",
+			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -5923,10 +6126,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "BOTTOM",
-			["useglowColor"] = false,
+			["internalVersion"] = 11,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["stickyDuration"] = false,
+			["text1Containment"] = "OUTSIDE",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -5952,7 +6155,12 @@ WeakAurasSaved = {
 			},
 			["text2Font"] = "Friz Quadrata TT",
 			["authorMode"] = true,
-			["cooldownTextEnabled"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "ACShine",
 			["text1Font"] = "Friz Quadrata TT",
@@ -5976,9 +6184,10 @@ WeakAurasSaved = {
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["text2FontSize"] = 24,
 			["text2Enabled"] = false,
+			["text2FontSize"] = 24,
+			["authorOptions"] = {
+			},
 			["text1"] = "攻速",
 			["glow"] = true,
 			["zoom"] = 0,
@@ -6004,7 +6213,7 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "攻速",
-			["text1Color"] = {
+			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
@@ -6012,7 +6221,7 @@ WeakAurasSaved = {
 			},
 			["alpha"] = 1,
 			["width"] = 32,
-			["color"] = {
+			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
@@ -6021,7 +6230,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["internalVersion"] = 11,
+			["cooldownTextEnabled"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -6050,8 +6259,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["useglowColor"] = false,
 		},
 		["能量150"] = {
 			["user_y"] = 0,
@@ -6273,16 +6481,16 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["use_unit"] = true,
 						["remaining"] = "95",
-						["unit"] = "player",
-						["spellName"] = 13877,
 						["debuffType"] = "HELPFUL",
-						["use_remaining"] = false,
+						["spellName"] = 13877,
 						["remaining_operator"] = "<=",
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Cooldown Progress (Spell)",
 						["use_itemName"] = true,
+						["event"] = "Cooldown Progress (Spell)",
+						["unit"] = "player",
 						["realSpellName"] = "剑刃乱舞",
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -6291,7 +6499,7 @@ WeakAurasSaved = {
 						["use_genericShowOn"] = true,
 						["names"] = {
 						},
-						["type"] = "status",
+						["use_remaining"] = false,
 						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
@@ -6302,8 +6510,8 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["desaturate"] = false,
 			["text2Font"] = "Friz Quadrata TT",
+			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -6321,7 +6529,7 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["text1Enabled"] = true,
+			["parent"] = "蛋神",
 			["selfPoint"] = "CENTER",
 			["text1Containment"] = "INSIDE",
 			["glowColor"] = {
@@ -6334,7 +6542,7 @@ WeakAurasSaved = {
 			["version"] = 21,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["internalVersion"] = 11,
+			["stickyDuration"] = false,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -6359,12 +6567,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["role"] = {
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -6372,63 +6583,65 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["difficulty"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
-			["stickyDuration"] = false,
-			["xOffset"] = -20,
+			["icon"] = true,
+			["url"] = "https://wago.io/4J5oydLtZ/21",
 			["uid"] = "EQrPVFHz08u",
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "Pixel",
 			["text1Font"] = "Friz Quadrata TT",
-			["url"] = "https://wago.io/4J5oydLtZ/21",
-			["width"] = 35,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["alpha"] = 1,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["width"] = 35,
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["glow"] = false,
 			["text2FontSize"] = 24,
+			["desaturate"] = false,
+			["text1"] = "%s",
+			["frameStrata"] = 3,
+			["text2"] = "%p",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["id"] = "剑刃乱舞CD",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1"] = "%s",
-			["frameStrata"] = 3,
-			["text2"] = "%p",
-			["zoom"] = 0,
-			["auto"] = true,
-			["glow"] = false,
-			["id"] = "剑刃乱舞CD",
-			["useglowColor"] = false,
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["icon"] = true,
+			["useglowColor"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["parent"] = "蛋神",
+			["xOffset"] = -20,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -6445,174 +6658,224 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["internalVersion"] = 11,
 		},
-		["DS伏击"] = {
-			["glow"] = false,
-			["text1FontSize"] = 20,
-			["authorOptions"] = {
-			},
+		["饰品上位CD"] = {
+			["text2Point"] = "CENTER",
+			["text1FontSize"] = 12,
+			["cooldownTextEnabled"] = true,
 			["yOffset"] = 64,
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
+						["itemName"] = 0,
 						["duration"] = "1",
+						["genericShowOn"] = "showAlways",
+						["subeventPrefix"] = "SPELL",
+						["itemSlot"] = 13,
+						["remaining"] = "95",
 						["names"] = {
 						},
-						["buffShowOn"] = "showOnActive",
+						["debuffType"] = "HELPFUL",
+						["spellName"] = 13750,
+						["remaining_operator"] = "<=",
 						["type"] = "status",
+						["unevent"] = "auto",
 						["subeventSuffix"] = "_CAST_START",
-						["use_absorbMode"] = true,
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Action Usable",
-						["use_unit"] = true,
-						["realSpellName"] = "伏击",
+						["use_showOn"] = true,
+						["use_itemName"] = true,
+						["event"] = "Cooldown Progress (Equipment Slot)",
+						["use_itemSlot"] = true,
+						["realSpellName"] = "冲动",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["unevent"] = "auto",
+						["use_genericShowOn"] = true,
+						["use_remaining"] = false,
+						["use_unit"] = true,
 						["unit"] = "player",
-						["use_targetRequired"] = false,
-						["spellName"] = 8676,
-						["debuffType"] = "HELPFUL",
+						["use_absorbMode"] = true,
 					},
 					["untrigger"] = {
+						["showOn"] = "showAlways",
+						["itemSlot"] = 13,
+						["genericShowOn"] = "showAlways",
+						["spellName"] = 12472,
 					},
 				}, -- [1]
-				{
-					["trigger"] = {
-						["type"] = "aura",
-						["subeventSuffix"] = "_CAST_START",
-						["ownOnly"] = true,
-						["event"] = "Health",
-						["subeventPrefix"] = "SPELL",
-						["spellIds"] = {
-							1784, -- [1]
-						},
-						["debuffType"] = "HELPFUL",
-						["unit"] = "player",
-						["names"] = {
-							"潜行", -- [1]
-						},
-						["buffShowOn"] = "showOnActive",
-					},
-					["untrigger"] = {
-					},
-				}, -- [2]
+				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["text1Enabled"] = false,
+			["text2Font"] = "Friz Quadrata TT",
+			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
-			["xOffset"] = 100,
-			["desaturate"] = false,
+			["authorOptions"] = {
+			},
+			["parent"] = "蛋神",
+			["selfPoint"] = "CENTER",
+			["text1Containment"] = "INSIDE",
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Point"] = "TOPRIGHT",
-			["stickyDuration"] = false,
+			["text1Point"] = "BOTTOMRIGHT",
+			["version"] = 21,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["text2Point"] = "CENTER",
+			["stickyDuration"] = false,
 			["load"] = {
-				["use_class"] = true,
-				["use_spec"] = true,
-				["class"] = {
-					["single"] = "ROGUE",
+				["talent2"] = {
 					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["single"] = 18,
+					["multi"] = {
+						[18] = true,
 					},
 				},
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
+						true, -- [1]
+						true, -- [2]
+						true, -- [3]
 					},
 				},
+				["class"] = {
+					["single"] = "ROGUE",
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
-			["text1Containment"] = "INSIDE",
-			["text2Font"] = "Friz Quadrata TT",
-			["selfPoint"] = "CENTER",
+			["icon"] = true,
+			["url"] = "https://wago.io/4J5oydLtZ/21",
+			["uid"] = "EMWClEVjPnq",
 			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Font"] = "伤害数字",
-			["useglowColor"] = false,
-			["config"] = {
-			},
-			["text1FontFlags"] = "THICKOUTLINE",
-			["regionType"] = "icon",
-			["internalVersion"] = 11,
-			["anchorFrameType"] = "SCREEN",
-			["text2FontSize"] = 24,
-			["text2Enabled"] = false,
-			["text1"] = "2",
-			["frameStrata"] = 1,
-			["text2Color"] = {
+			["glowType"] = "Pixel",
+			["text1Font"] = "Friz Quadrata TT",
+			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2"] = "%p",
-			["auto"] = true,
-			["zoom"] = 0,
-			["id"] = "DS伏击",
-			["cooldownTextEnabled"] = true,
-			["alpha"] = 1,
 			["width"] = 35,
-			["text1Color"] = {
-				0.972549019607843, -- [1]
-				0.996078431372549, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["uid"] = "l)6dDZw0LcA",
-			["inverse"] = false,
-			["parent"] = "蛋神",
-			["conditions"] = {
-			},
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["glow"] = false,
+			["text2FontSize"] = 24,
+			["desaturate"] = false,
+			["text1"] = "%s",
+			["frameStrata"] = 1,
+			["text2"] = "%p",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["id"] = "饰品上位CD",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+			["text2Enabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["useglowColor"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = -60,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "onCooldown",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "inverse",
+						}, -- [1]
+						{
+							["value"] = {
+								0.43921568627451, -- [1]
+								0.43921568627451, -- [2]
+								0.43921568627451, -- [3]
+								1, -- [4]
+							},
+							["property"] = "color",
+						}, -- [2]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
+			["internalVersion"] = 11,
 		},
 		["能量"] = {
 			["text2Point"] = "CENTER",
@@ -6632,10 +6895,10 @@ WeakAurasSaved = {
 						["useExactSpellId"] = true,
 						["matchesShowOn"] = "showAlways",
 						["event"] = "Health",
-						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
-						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
 						["auraspellids"] = {
 							"199600", -- [1]
 						},
@@ -6652,20 +6915,15 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["text2Font"] = "Friz Quadrata TT",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2Font"] = "Friz Quadrata TT",
-			["stickyDuration"] = false,
+			["parent"] = "蛋神",
+			["desaturate"] = false,
 			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -6673,25 +6931,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Point"] = "BOTTOM",
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["preset"] = "shrink",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["preset"] = "bounceDecay",
-				},
-			},
+			["stickyDuration"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["desaturate"] = false,
+			["text1Containment"] = "OUTSIDE",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = true,
@@ -6715,9 +6958,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Containment"] = "OUTSIDE",
+			["useglowColor"] = false,
 			["authorMode"] = true,
-			["cooldownTextEnabled"] = true,
+			["xOffset"] = 20,
 			["text2Containment"] = "INSIDE",
 			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
@@ -6728,13 +6971,13 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["xOffset"] = 20,
+			["internalVersion"] = 11,
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["width"] = 32,
 			["alpha"] = 1,
 			["text2FontSize"] = 24,
-			["internalVersion"] = 11,
+			["glow"] = false,
 			["text1"] = "能量",
 			["actions"] = {
 				["start"] = {
@@ -6760,13 +7003,18 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["frameStrata"] = 1,
 			["id"] = "能量",
-			["text1Font"] = "Friz Quadrata TT",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["useglowColor"] = false,
+			["text1Font"] = "Friz Quadrata TT",
 			["uid"] = "zyjFJsRWhDw",
 			["inverse"] = false,
-			["parent"] = "蛋神",
+			["cooldownTextEnabled"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -6783,116 +7031,45 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["glow"] = false,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["preset"] = "bounceDecay",
+				},
+			},
 		},
-		["DS影袭2"] = {
-			["text2Point"] = "CENTER",
-			["text1FontSize"] = 20,
-			["xOffset"] = 100,
+		["冲动CD"] = {
+			["glow"] = false,
+			["text1FontSize"] = 12,
+			["cooldownTextEnabled"] = true,
 			["yOffset"] = 64,
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["use_absorbMode"] = true,
-						["use_unit"] = true,
-						["debuffType"] = "HELPFUL",
-						["type"] = "status",
-						["use_targetRequired"] = false,
-						["duration"] = "1",
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Action Usable",
-						["names"] = {
-						},
-						["realSpellName"] = "影袭",
-						["use_spellName"] = true,
-						["spellIds"] = {
-						},
-						["unevent"] = "auto",
-						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
-						["buffShowOn"] = "showOnActive",
-						["spellName"] = 193315,
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["use_absorbMode"] = true,
-						["use_unit"] = true,
-						["powertype"] = 4,
-						["use_powertype"] = true,
-						["buffShowOn"] = "showOnActive",
-						["type"] = "status",
-						["unevent"] = "auto",
-						["power_operator"] = "<=",
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Power",
-						["ownOnly"] = true,
-						["unit"] = "player",
-						["debuffType"] = "HELPFUL",
-						["spellIds"] = {
-							1784, -- [1]
-						},
-						["names"] = {
-							"潜行", -- [1]
-						},
-						["power"] = "4",
-						["use_power"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["duration"] = "1",
-					},
-					["untrigger"] = {
-					},
-				}, -- [2]
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["use_unit"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["power_operator"] = ">=",
-						["use_absorbMode"] = true,
-						["event"] = "Power",
-						["unit"] = "player",
-						["use_percentpower"] = false,
-						["powertype"] = 3,
-						["power"] = "90",
-						["use_power"] = true,
-						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
-						["use_powertype"] = true,
-						["duration"] = "1",
-					},
-					["untrigger"] = {
-					},
-				}, -- [3]
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["power"] = "135",
-						["power_operator"] = "<",
-						["duration"] = "1",
-						["event"] = "Power",
-						["use_unit"] = true,
-						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
-						["unevent"] = "auto",
-						["use_absorbMode"] = true,
-						["subeventPrefix"] = "SPELL",
-						["use_power"] = true,
-					},
-					["untrigger"] = {
-					},
-				}, -- [4]
-				["activeTriggerMode"] = -10,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
-			["text1Enabled"] = false,
+			["useglowColor"] = false,
+			["url"] = "https://wago.io/4J5oydLtZ/21",
+			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -6907,7 +7084,44 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["text2Font"] = "Friz Quadrata TT",
+			["parent"] = "蛋神",
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["itemName"] = 0,
+						["use_genericShowOn"] = true,
+						["genericShowOn"] = "showAlways",
+						["unit"] = "player",
+						["remaining"] = "95",
+						["remaining_operator"] = "<=",
+						["spellName"] = 13750,
+						["type"] = "status",
+						["use_remaining"] = false,
+						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["use_showOn"] = true,
+						["duration"] = "1",
+						["event"] = "Cooldown Progress (Spell)",
+						["names"] = {
+						},
+						["realSpellName"] = "冲动",
+						["use_spellName"] = true,
+						["spellIds"] = {
+						},
+						["use_itemName"] = true,
+						["unevent"] = "auto",
+						["use_absorbMode"] = true,
+						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+						["showOn"] = "showAlways",
+						["spellName"] = 12472,
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
 			["stickyDuration"] = false,
 			["glowColor"] = {
 				1, -- [1]
@@ -6915,21 +7129,58 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["parent"] = "蛋神",
+			["text1Point"] = "TOPRIGHT",
+			["version"] = 21,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 35,
-			["glow"] = false,
+			["text1Containment"] = "INSIDE",
 			["load"] = {
-				["use_class"] = true,
-				["use_spec"] = true,
-				["spec"] = {
-					["single"] = 2,
+				["talent2"] = {
 					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["single"] = 18,
+					["multi"] = {
+						[18] = true,
 					},
 				},
 				["class"] = {
 					["single"] = "ROGUE",
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						true, -- [1]
+						true, -- [2]
+						true, -- [3]
+					},
+				},
+				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -6938,71 +7189,87 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
-			["desaturate"] = false,
-			["text1Containment"] = "INSIDE",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Font"] = "伤害数字",
-			["selfPoint"] = "CENTER",
+			["internalVersion"] = 11,
+			["icon"] = true,
 			["config"] = {
 			},
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["regionType"] = "icon",
-			["color"] = {
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "Pixel",
+			["text1Font"] = "Friz Quadrata TT",
+			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
 			["anchorFrameType"] = "SCREEN",
-			["text2FontSize"] = 24,
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
 			["text2Enabled"] = false,
-			["text1"] = "2",
-			["frameStrata"] = 1,
-			["text1Color"] = {
-				0.972549019607843, -- [1]
-				0.996078431372549, -- [2]
+			["xOffset"] = -100,
+			["text2FontSize"] = 24,
+			["text2Point"] = "CENTER",
+			["text1"] = "%s",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
 			["zoom"] = 0,
-			["auto"] = true,
 			["text2"] = "%p",
-			["id"] = "DS影袭2",
-			["cooldownTextEnabled"] = true,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["id"] = "冲动CD",
+			["frameStrata"] = 3,
 			["alpha"] = 1,
 			["width"] = 35,
-			["text1FontFlags"] = "THICKOUTLINE",
-			["uid"] = "9zflQMQ5mdk",
+			["desaturate"] = false,
+			["uid"] = "jleMs1fz8l5",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["authorOptions"] = {
 			},
 			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "onCooldown",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "inverse",
+						}, -- [1]
+						{
+							["value"] = {
+								0.43921568627451, -- [1]
+								0.43921568627451, -- [2]
+								0.43921568627451, -- [3]
+								1, -- [4]
+							},
+							["property"] = "color",
+						}, -- [2]
+					},
+				}, -- [1]
 			},
-			["internalVersion"] = 11,
-			["useglowColor"] = false,
+			["cooldown"] = true,
+			["text1Enabled"] = false,
 		},
 	},
 	["frame"] = {
-		["xOffset"] = -1043.00018310547,
-		["width"] = 829.999938964844,
-		["height"] = 665,
-		["yOffset"] = -118.25,
+		["xOffset"] = -1211.80358886719,
+		["width"] = 830,
+		["height"] = 665.000061035156,
+		["yOffset"] = -116.046875,
 	},
 	["minimap"] = {
+		["minimapPos"] = 53.9721050076203,
 		["hide"] = false,
 	},
 }

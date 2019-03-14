@@ -1,0 +1,23 @@
+
+SIACFG = {
+	["soundOwn"] = "",
+	["party"] = {
+		["other"] = "self",
+		["own"] = "say",
+	},
+	["solo"] = {
+		["other"] = "off",
+		["own"] = "self",
+	},
+	["soundOther"] = "",
+	["isEnabled"] = true,
+	["raid"] = {
+		["other"] = "self",
+		["own"] = "say",
+	},
+	["instance"] = {
+		["other"] = "self",
+		["own"] = "say",
+	},
+	["cfgversion"] = 1,
+}

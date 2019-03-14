@@ -1,0 +1,16 @@
+
+NugComboBarDB_Global = {
+	["preset3dlayer2"] = "chiBlastBlue",
+	["bar2_y"] = -5,
+	["y"] = -254.905853271484,
+	["x"] = -89.710578918457,
+	["soundNameFull"] = "auctionwindowopen",
+	["charspec"] = {
+	},
+	["scale"] = 1.25,
+	["showEmpty"] = true,
+	["soundChannel"] = "Music",
+	["bar2_x"] = 75,
+	["showAlways"] = true,
+	["preset3d"] = "furnace",
+}
