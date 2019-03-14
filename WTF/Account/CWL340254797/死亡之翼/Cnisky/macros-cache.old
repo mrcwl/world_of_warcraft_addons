@@ -1,0 +1,45 @@
+VER 3 0100000000000002 "`" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@focus,exists][] 嫁祸诀窍
+END
+VER 3 0100000000000009 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=1 命运骨骰,99
+END
+VER 3 0100000000000004 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip 嫁祸诀窍
+/cast [help] [target=focus, help] 嫁祸诀窍
+END
+VER 3 0100000000000003 "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@cursor] 抓钩
+END
+VER 3 0100000000000008 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=1 斩击,99
+END
+VER 3 0100000000000001 "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/施放 剑刃乱舞
+/use 科赞铭刻宝石
+END
+VER 3 010000000000000A "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/施放 冲动
+/use 金辉飞羽
+END
+VER 3 0100000000000007 "炸矿" "INV_MISC_QUESTIONMARK"
+#showtooltips 白金矿石
+/cast 选矿
+/use 白金矿石
+END
+VER 3 0100000000000006 "炸矿" "INV_MISC_QUESTIONMARK"
+#showtooltips 雷银矿石
+/cast 选矿
+/use 雷银矿石
+END
+VER 3 0100000000000005 "炸矿" "INV_MISC_QUESTIONMARK"
+#showtooltips 镍铜矿石
+/cast 选矿
+/use 镍铜矿石
+END

@@ -1,0 +1,108 @@
+
+SkadaDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Cnisky - 熊猫酒仙"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["windows"] = {
+				{
+					["background"] = {
+						["height"] = 163.999969482422,
+					},
+					["y"] = 25.9997997283936,
+					["mode"] = "治疗",
+					["point"] = "BOTTOMRIGHT",
+					["x"] = 0,
+					["barwidth"] = 414.750122070313,
+				}, -- [1]
+				{
+					["titleset"] = true,
+					["barheight"] = 15,
+					["classicons"] = true,
+					["barslocked"] = false,
+					["enabletitle"] = true,
+					["wipemode"] = "",
+					["set"] = "current",
+					["hidden"] = false,
+					["y"] = 209.750381469727,
+					["barfont"] = "Accidental Presidency",
+					["name"] = "伤害",
+					["display"] = "bar",
+					["barfontflags"] = "",
+					["classcolortext"] = false,
+					["scale"] = 1,
+					["reversegrowth"] = false,
+					["returnaftercombat"] = false,
+					["roleicons"] = false,
+					["barorientation"] = 1,
+					["snapto"] = true,
+					["mode"] = "伤害",
+					["point"] = "BOTTOMRIGHT",
+					["x"] = 0,
+					["showself"] = true,
+					["bartexture"] = "BantoBar",
+					["barwidth"] = 416.999786376953,
+					["barspacing"] = 0,
+					["buttons"] = {
+						["segment"] = true,
+						["menu"] = true,
+						["mode"] = true,
+						["report"] = true,
+						["reset"] = true,
+					},
+					["title"] = {
+						["color"] = {
+							["a"] = 0.8,
+							["r"] = 0.1,
+							["g"] = 0.1,
+							["b"] = 0.3,
+						},
+						["bordertexture"] = "None",
+						["font"] = "Accidental Presidency",
+						["borderthickness"] = 2,
+						["fontsize"] = 11,
+						["fontflags"] = "",
+						["height"] = 15,
+						["margin"] = 0,
+						["texture"] = "Aluminium",
+					},
+					["barbgcolor"] = {
+						["a"] = 0.6,
+						["r"] = 0.3,
+						["g"] = 0.3,
+						["b"] = 0.3,
+					},
+					["barcolor"] = {
+						["a"] = 1,
+						["r"] = 0.3,
+						["g"] = 0.3,
+						["b"] = 0.8,
+					},
+					["background"] = {
+						["borderthickness"] = 0,
+						["color"] = {
+							["a"] = 0.2,
+							["r"] = 0,
+							["g"] = 0,
+							["b"] = 0.5,
+						},
+						["height"] = 154.250015258789,
+						["bordertexture"] = "None",
+						["margin"] = 0,
+						["texture"] = "Solid",
+					},
+					["classcolorbars"] = true,
+					["barfontsize"] = 11,
+					["version"] = 1,
+					["clickthrough"] = false,
+					["modeincombat"] = "",
+				}, -- [2]
+			},
+		},
+	},
+}

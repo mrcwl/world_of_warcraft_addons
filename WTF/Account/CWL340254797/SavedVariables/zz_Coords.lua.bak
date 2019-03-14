@@ -1,0 +1,27 @@
+
+zz_CoordsDB = {
+	["global"] = {
+		["ldbicons"] = {
+			["zz_Coords"] = {
+				["hide"] = false,
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Cnisky - 死亡之翼"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["zz_Coords"] = {
+				["ShowSubZone"] = true,
+				["screenX"] = 10,
+				["ShowZone"] = false,
+				["ShowTooltip"] = false,
+				["screenY"] = 5,
+				["windowX"] = 10,
+				["windowY"] = 5,
+				["colorLDB"] = true,
+			},
+		},
+	},
+}

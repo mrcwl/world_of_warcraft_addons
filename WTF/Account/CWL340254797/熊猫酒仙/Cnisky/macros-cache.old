@@ -1,0 +1,53 @@
+VER 3 0100000000000001 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,help][help,exists]愈合;[@mouseover,harm,exists][harm,exists]阳炎之怒;愈合
+END
+VER 3 010000000000000A "`" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help,exists][help,exists] 自然之愈;[harm,exists,nodead][mod:alt] 安抚;自然之愈
+END
+VER 3 0100000000000009 "`" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,exists]活力巫毒图腾;活力巫毒图腾
+END
+VER 3 0100000000000005 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [outdoors] !旅行形态;[talent:3/2] 猎豹形态;[talent:3/3] 熊形态;旅行形态;
+END
+VER 3 0100000000000008 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt,@player]回春术;[@mouseover,help,nodead]回春术;[@mouseover,help,dead][mod:shift]复生;[@mouseover,harm,exists][harm,exists,nodead]月火术;回春术
+END
+VER 3 0100000000000004 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover]复生;复生
+END
+VER 3 0100000000000003 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists]野性成长;野性成长
+END
+VER 3 0100000000000007 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt,@player]生命绽放;[@mouseover,help,nodead]生命绽放;[@mouseover,help,dead]新生;[@mouseover,harm,exists][harm,exists,nodead]阳炎术;生命绽放
+END
+VER 3 0100000000000002 "·" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover]铁木树皮;铁木树皮
+END
+VER 3 010000000000000B "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [combat,talent:3/2] !猎豹形态; [combat,talent:3/3] !熊形态; [nocombat] 潜行;潜行
+END
+VER 3 010000000000000C "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@cursor] 百花齐放
+END
+VER 3 010000000000000D "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@mouseover,help,exists][help,exists]塞纳里奥结界;塞纳里奥结界
+/use [@mouseover,help,exists][help,exists]活力巫毒图腾;活力巫毒图腾
+END
+VER 3 010000000000000E "·" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@player] 激活
+END

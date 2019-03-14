@@ -1,0 +1,8 @@
+3/14 09:02:46.388  Voice Log Initialize.
+3/14 09:02:46.388  VoiceProxy attempting to listen on 127.0.0.1:6724
+3/14 09:02:50.899  WoW client has connected to proxy
+3/14 09:06:12.921  VoiceProxy CloseProxy request from client.
+3/14 09:06:12.921  VoiceProxy shutdown requested.
+3/14 09:06:12.932  Transport disconnected.  Error [ErrorOk (0)], Reason []
+3/14 09:06:13.035  Last client closed, stopping proxy.
+3/14 09:06:13.056  Voice Log Destroy.

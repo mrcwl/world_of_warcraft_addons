@@ -1,0 +1,66 @@
+3/14 09:02:22.412   - SE3 Init...
+3/14 09:02:22.412  => SI3 Init
+3/14 09:02:22.412  => WoW Version 8.1.5 (29705) Mar 12 2019
+3/14 09:02:22.412   
+3/14 09:02:22.412  => User Settings Report:
+3/14 09:02:22.412   - ========= PLAYBACK =========
+3/14 09:02:22.412   - Enable All Sound         [1]
+3/14 09:02:22.412   - Enable SFX               [1]
+3/14 09:02:22.412   --- Enable Emote Sounds    [1]
+3/14 09:02:22.412   - Enable Music             [1]
+3/14 09:02:22.412   --- Loop Music             [0]
+3/14 09:02:22.412   --- Pet Battle Music       [1]
+3/14 09:02:22.412   - Enable Ambient Sounds    [1]
+3/14 09:02:22.412   - Enable Dialog            [1]
+3/14 09:02:22.412   --- Enable Error Speech    [1]
+3/14 09:02:22.412   - Sound at Character       [1]
+3/14 09:02:22.412   - Sound in Background      [1]
+3/14 09:02:22.412   - Enable Reverb            [0]
+3/14 09:02:22.412   -
+3/14 09:02:22.412   - ========== VOLUME ==========
+3/14 09:02:22.412   - Master Volume         [1.00]
+3/14 09:02:22.412   - SFX Volume            [1.00]
+3/14 09:02:22.412   - Music Volume          [0.40]
+3/14 09:02:22.412   - Ambience Volume       [0.60]
+3/14 09:02:22.412   - Dialog Volume         [1.00]
+3/14 09:02:22.412   -
+3/14 09:02:22.412   - =========== MISC ===========
+3/14 09:02:22.412   - Sound Channels          [32]
+3/14 09:02:22.412   - Sound Cache           [64MB]
+3/14 09:02:22.412   - Mix Mode 2               [0]
+3/14 09:02:22.412   - DSP Buffer Size       [AUTO]
+3/14 09:02:22.412   - Armor Foley SFX (Self)   [1]
+3/14 09:02:22.412   - Armor Foley SFX (Others) [1]
+3/14 09:02:22.412  => End of User Settings Report
+3/14 09:02:22.412   
+3/14 09:02:22.412   - FMOD Memory Init
+3/14 09:02:22.412   - FMOD System Create
+3/14 09:02:22.412   - Setting Output Type
+3/14 09:02:22.438   - 2 Output drivers detected
+3/14 09:02:22.438   --- [0] System Default
+3/14 09:02:22.438   --- [1] 内建输出
+3/14 09:02:22.438  ** Using Driver [0] System Default (内建输出)
+3/14 09:02:22.438   - DSPBufferSize = AUTO DETECT
+3/14 09:02:22.438   - Setting DSP Buffer Size
+3/14 09:02:22.438   - Using Control Panel Speaker Mode STEREO
+3/14 09:02:22.438   - Setting Software Format (44100, 2, 1).
+3/14 09:02:22.438   - Requested 32 channels.
+3/14 09:02:22.438   - Initializing Software Channels
+3/14 09:02:22.461   - Init FMOD Game System
+3/14 09:02:22.461   - Ok
+3/14 09:02:22.461   - Setting Rolloff Scale
+3/14 09:02:22.461   - Setting Rolloff Callback
+3/14 09:02:22.461   - SE3 EmitterManagerInit Success
+3/14 09:02:22.461   - Setting device callback
+3/14 09:02:22.461   - Sound Bus Init
+3/14 09:02:22.461   - Init Suppressors
+3/14 09:02:22.461   - SE3 Init Success.
+3/14 09:02:22.469  => SI3 Init Complete.
+3/14 09:02:22.469   
+3/14 09:06:13.309   
+3/14 09:06:13.309  => Shutting Down SI3
+3/14 09:06:13.330  => Shutting Down SI3 COMPLETE.
+3/14 09:06:13.330   
+3/14 09:06:13.330   - Shutting Down SE3
+3/14 09:06:13.468   - SE3 EmitterManagerShutdown Success
+3/14 09:06:13.468   - Shutting Down SE3 COMPLETE.
